@@ -20,7 +20,17 @@
 #include <string.h>
 
 #include <time.h>
+#include <stdlib.h>
+#if !defined(__APPLE__)
 #include <malloc.h>
+#else
+// macOS has no malloc.h/memalign; posix_memalign gives the same aligned block.
+static void *memalign(size_t alignment, size_t size)
+{
+    void *p = NULL;
+    return posix_memalign(&p, alignment, size) == 0 ? p : NULL;
+}
+#endif
 
 #include "common/os_interop.h"
 

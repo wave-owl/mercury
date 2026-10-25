@@ -1314,7 +1314,8 @@ void cl_ofdm::ZF_channel_estimator(std::complex <double>*in)
 
 void cl_ofdm::LS_channel_estimator(std::complex <double>*in)
 {
-	std::complex <double> pilot_data[Nsymb*Nc]={std::complex <double> (0,0)};
+	std::complex <double> pilot_data[Nsymb*Nc];
+	for(int i=0;i<Nsymb*Nc;i++) pilot_data[i]=std::complex <double> (0,0);
 
 	int pilot_index=0;
 	for(int i=0;i<Nsymb;i++)

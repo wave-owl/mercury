@@ -27,6 +27,18 @@
 #ifdef MERCURY_GUI_ENABLED
 #include "gui/gui_state.h"
 #endif
+#include <cstring>
+
+// Coarse frequency search before the second sync trial: the GUI setting when the GUI is
+// built, off in a headless build (the GUI's default, ini_parser.cc).
+static inline bool coarse_freq_sync_enabled()
+{
+#ifdef MERCURY_GUI_ENABLED
+	return g_gui_state.coarse_freq_sync_enabled.load();
+#else
+	return false;
+#endif
+}
 
 extern cbuf_handle_t capture_buffer;
 extern cbuf_handle_t playback_buffer;
@@ -107,7 +119,8 @@ cl_error_rate cl_telecom_system::baseband_test_EsN0(float EsN0,int max_frame_no)
 
 	int constellation_plot_counter=0;
 	int constellation_plot_nFrames=10;
-	float contellation[ofdm.pilot_configurator.nData*constellation_plot_nFrames][2]={0};
+	float contellation[ofdm.pilot_configurator.nData*constellation_plot_nFrames][2];
+	memset(contellation, 0, sizeof(contellation));
 
 	while(lerror_rate.Frames_total<max_frame_no)
 	{
@@ -257,7 +270,8 @@ cl_error_rate cl_telecom_system::passband_test_EsN0(float EsN0,int max_frame_no)
 	int constellation_plot_nFrames=10;
 	// For MFSK, nData can be very large (>15000) - skip constellation plot to avoid stack overflow
 	int nDataPlot = (M == MOD_MFSK) ? 0 : ofdm.pilot_configurator.nData;
-	float contellation[nDataPlot*constellation_plot_nFrames+1][2]={};
+	float contellation[nDataPlot*constellation_plot_nFrames+1][2];
+	memset(contellation, 0, sizeof(contellation));
 
 	while(lerror_rate.Frames_total<max_frame_no)
 	{
@@ -946,7 +960,7 @@ skip_h_retry_point:
 			{
 				receive_stats.delay=receive_stats.delay_of_last_decoded_message;
 			}
-			else if (receive_stats.sync_trials == 1 && g_gui_state.coarse_freq_sync_enabled.load())
+			else if (receive_stats.sync_trials == 1 && coarse_freq_sync_enabled())
 			{
 				// Trial 0 failed - try coarse frequency search before trial 1
 				// Search ±30 Hz; Moose handles ±22 Hz residual at each,
@@ -2104,7 +2118,8 @@ void cl_telecom_system::RX_RAND_process_main()
 	std::complex <double> data_fft[ofdm.pilot_configurator.nData];
 	int constellation_plot_counter=0;
 	int constellation_plot_nFrames=1;
-	float contellation[ofdm.pilot_configurator.nData*constellation_plot_nFrames][2]={0};
+	float contellation[ofdm.pilot_configurator.nData*constellation_plot_nFrames][2];
+	memset(contellation, 0, sizeof(contellation));
     int nReal_data = data_container.nBits - ldpc.P;
     int frame_size = (nReal_data - outer_code_reserved_bits) / 8;
     int out_data[N_MAX];
