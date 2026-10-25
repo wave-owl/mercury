@@ -27,6 +27,11 @@
 #include <cstdint>
 #include <math.h>
 #include <unistd.h>
+#if !defined(_WIN32)
+#include <arpa/inet.h>
+#else
+#include <ws2tcpip.h>
+#endif
 #include <iostream>
 #include <complex>
 #include "physical_layer/telecom_system.h"
@@ -81,6 +86,8 @@ extern "C" {
     char *input_dev;
     char *output_dev;
     bool shutdown_;
+    // ARQ TCP bind address ("" = all interfaces; socket audio defaults to 127.0.0.1)
+    extern char tcp_bind_address[64];
     // Audio channel configuration (0=LEFT, 1=RIGHT, 2=STEREO)
     extern int configured_input_channel;
     extern int configured_output_channel;
@@ -161,8 +168,14 @@ int main(int argc, char *argv[])
         printf(" -r [radio_type]            Available radio types are: stockhf, sbitx.\n");
         printf(" -i [device]                Radio Capture device id (eg: \"plughw:0,0\").\n");
         printf(" -o [device]                Radio Playback device id (eg: \"plughw:0,0\").\n");
-        printf(" -x [sound_system]          Sets the sound system API to use: alsa, pulse, dsound or wasapi. Default is alsa on Linux and wasapi on Windows.\n");
+        printf(" -x [sound_system]          Sets the sound system API to use: alsa, pulse, dsound, wasapi or socket. Default is alsa on Linux and wasapi on Windows.\n");
+#if !defined(_WIN32)
+        printf("                            Socket audio: -i TCP:<port> -o TCP:<port> (or TCP:<host>:<port>, loopback only) exchanges\n");
+        printf("                            48 kHz int16 audio with a host program over one authenticated loopback TCP connection\n");
+        printf("                            (token in $MERCURY_NETAUDIO_TOKEN; see include/audioio/netaudio.h).\n");
+#endif
 		printf(" -p [arq_tcp_base_port]     Sets the ARQ TCP base port (control is base_port, data is base_port + 1). Default is 7002.\n");
+        printf(" -A [bind_address]          IPv4 address the ARQ TCP ports listen on. Default: all interfaces; 127.0.0.1 with socket audio.\n");
         printf(" -g                         Enables the adaptive modulation selection (gear-shifting).\n");
         printf(" -t [timeout_ms]            Connection timeout in milliseconds (ARQ mode only). Default is 15000.\n");
         printf(" -a [max_attempts]          Maximum connection attempts before giving up (ARQ mode only). Default is 15.\n");
@@ -185,7 +198,7 @@ int main(int argc, char *argv[])
     }
 
     int opt;
-    while ((opt = getopt(argc, argv, "hc:m:s:lr:i:o:x:p:zgt:a:k:eCnf:I:RP:vT:G:")) != -1)
+    while ((opt = getopt(argc, argv, "hc:m:s:lr:i:o:x:p:zgt:a:k:eCnf:I:RP:vT:G:A:")) != -1)
     {
         switch (opt)
         {
@@ -257,6 +270,20 @@ int main(int argc, char *argv[])
                 audio_system = AUDIO_SUBSYSTEM_OSS;
             if (!strcmp(optarg, "coreaudio"))
                 audio_system = AUDIO_SUBSYSTEM_COREAUDIO;
+            if (!strcmp(optarg, "socket"))
+                audio_system = AUDIO_SUBSYSTEM_SOCKET;
+            break;
+        case 'A':
+            if (optarg)
+            {
+                struct in_addr probe;
+                if (inet_pton(AF_INET, optarg, &probe) != 1)
+                {
+                    printf("Wrong bind address %s (IPv4 expected).\n", optarg);
+                    goto manual;
+                }
+                strncpy(tcp_bind_address, optarg, sizeof(tcp_bind_address) - 1);
+            }
             break;
         case 'g':
             gear_shift_mode = GEAR_SHIFT_ENABLED;
@@ -415,6 +442,30 @@ start_modem:
 #endif
     }
 
+    // Socket audio: a TCP: device selects it; it needs TCP: on both sides and keeps
+    // the ARQ ports on loopback unless -A says otherwise.
+    {
+        bool in_socket = strncmp(input_dev ? input_dev : "", "TCP:", 4) == 0;
+        bool out_socket = strncmp(output_dev ? output_dev : "", "TCP:", 4) == 0;
+        if (in_socket || out_socket)
+            audio_system = AUDIO_SUBSYSTEM_SOCKET;
+        if (audio_system == AUDIO_SUBSYSTEM_SOCKET)
+        {
+#if defined(_WIN32)
+            printf("Socket audio is not available on Windows.\n");
+            return EXIT_FAILURE;
+#else
+            if (!(in_socket && out_socket) || strcmp(input_dev, output_dev) != 0)
+            {
+                printf("Socket audio needs the same TCP:<port> device for -i and -o.\n");
+                return EXIT_FAILURE;
+            }
+            if (tcp_bind_address[0] == 0)
+                strcpy(tcp_bind_address, "127.0.0.1");
+#endif
+        }
+    }
+
     // set some defaults... in case the user did not select
     if (audio_system == -1)
     {
@@ -473,6 +524,9 @@ start_modem:
             output_dev = NULL;
         }
         printf("Microsoft DirectSound (DSOUND)\n");
+        break;
+    case AUDIO_SUBSYSTEM_SOCKET:
+        printf("Socket audio (%s, ARQ ports on %s)\n", input_dev, tcp_bind_address);
         break;
     default:
         printf("No supported audio system selected. Trying to continue.\n");

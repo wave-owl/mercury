@@ -22,6 +22,11 @@
 
 #include "datalink_layer/tcp_socket.h"
 
+// IPv4 address the server sockets bind to ("" = INADDR_ANY); set by main (-A)
+extern "C" {
+char tcp_bind_address[64] = "";
+}
+
 cl_tcp_socket::cl_tcp_socket()
 {
 	type=TYPE_SERVER;
@@ -86,6 +91,9 @@ int cl_tcp_socket::init()
 			{
 				server.sin_family = AF_INET;
 				server.sin_addr.s_addr = htonl(INADDR_ANY);
+				// -A (socket audio: 127.0.0.1 by default) keeps the ARQ ports off the network
+				if (tcp_bind_address[0] != 0)
+					inet_pton(AF_INET, tcp_bind_address, &server.sin_addr);
 				server.sin_port = htons((uint16_t)port);
 				status=TCP_STATUS_SOCKET_CREATED;
 			}

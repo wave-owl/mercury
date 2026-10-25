@@ -26,6 +26,8 @@
 #define AUDIO_SUBSYSTEM_COREAUDIO 4
 #define AUDIO_SUBSYSTEM_OSS 5
 #define AUDIO_SUBSYSTEM_AAUDIO 6
+// Socket audio device "TCP:<port>" (audioio/netaudio.h), Unix-like platforms only
+#define AUDIO_SUBSYSTEM_SOCKET 7
 
 #define LEFT 0
 #define RIGHT 1

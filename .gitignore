@@ -49,3 +49,4 @@ benchmark_results/
 
 # Windows short filename artifacts
 NDH6SA~M
+tests/netaudio/hmac_test

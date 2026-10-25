@@ -22,6 +22,9 @@
 
 #include "datalink_layer/arq.h"
 #include "audioio/audioio.h"
+#if !defined(_WIN32)
+#include "audioio/netaudio.h"
+#endif
 #include <cmath>
 #include <cstring>
 #include <chrono>
@@ -1933,6 +1936,14 @@ void cl_arq_controller::ptt_on()
 }
 void cl_arq_controller::ptt_off()
 {
+#if !defined(_WIN32)
+	// Socket audio: PTT is released only after the host reports that this
+	// transmission has left the radio (or its length + 2 s passed, then
+	// Mercury exits); the drain wait above ends up to 500 ms early because TX
+	// audio may run ahead of real time on the socket.
+	if (netaudio_active())
+		netaudio_flush();
+#endif
 	std::string str="PTT OFF\r";
 	tcp_socket_control.message->length=str.length();
 

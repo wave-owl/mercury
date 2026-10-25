@@ -264,3 +264,24 @@ https://lists.riseup.net/www/info/hermes-general
 The code was originally written by Fadi Jerji for Rhizomatica's HERMES project. Currently the project is maintained by Rhizomatica's HERMES team.
 
 This project is sponsored by ARDC.
+
+## Socket audio (wave-owl fork)
+
+For hosts without a sound card (an SDR such as the Hermes Lite 2 owns the sample stream),
+this fork adds a socket audio device. `-i TCP:<port> -o TCP:<port>` (or
+`TCP:<host>:<port>`, loopback addresses only; `-x socket` is optional) makes Mercury connect
+to a host program on that port and exchange its modem audio there: 48 kHz int16 mono RX audio
+from the host in real time, TX audio to the host paced to at most 500 ms ahead of real time.
+The connection is authenticated both ways with HMAC-SHA256 over a shared token from
+`$MERCURY_NETAUDIO_TOKEN` (protocol 3, the same as the socket audio device of the wave-owl
+ardopcf fork); the token never crosses the connection. With socket audio:
+
+- `PTT OFF` is reported only after the host confirmed that the transmission has left the
+  radio (or its length + 2 s passed; Mercury then exits),
+- a lost or stalled connection ends Mercury,
+- the audio ring buffers are private to the process (no shared memory),
+- the ARQ TCP ports listen on 127.0.0.1 unless `-A <address>` says otherwise.
+
+Wire format: `include/audioio/netaudio.h`. Host example: `tools/netaudio_host.py`
+(`NetaudioHost`, and `Crossbar` connecting two modems for an ARQ session on one machine).
+Tests: `make test-netaudio`.

@@ -94,14 +94,14 @@ ifeq (${uname_m},aarch64)
 #	CPPFLAGS+=-march=armv8.2-a+crypto+fp16+rcpc+dotprod
 endif
 
-.PHONY: clean install examples audioio
+.PHONY: clean install examples audioio test-netaudio
 
 all: mercury examples
 
 examples:
 	$(MAKE) -C examples
 
-source/audioio/audioio.a: source/audioio/audioio.c
+source/audioio/audioio.a: source/audioio/audioio.c source/audioio/netaudio.c source/audioio/hmac_sha256.c
 	$(MAKE) -C source/audioio GUI_ENABLED=$(GUI_ENABLED)
 
 # Main executable - conditionally include ImGui objects
@@ -126,6 +126,14 @@ $(IMGUI_DIR)/backends/%.o: $(IMGUI_DIR)/backends/%.cpp
 	$(CPP) -c $(CPPFLAGS) -Wno-cast-function-type $< -o $@
 endif
 
+# Socket audio device (include/audioio/netaudio.h): HMAC vectors and the host tests
+# (build the modem first, e.g. make mercury GUI_ENABLED=0)
+test-netaudio:
+	@test -x ./mercury || { echo "build mercury first: make mercury GUI_ENABLED=0"; exit 1; }
+	$(CC) -std=gnu11 -I./include tests/netaudio/hmac_test.c source/audioio/hmac_sha256.c -o tests/netaudio/hmac_test
+	./tests/netaudio/hmac_test
+	PYTHONDONTWRITEBYTECODE=1 python3 -m pytest -c /dev/null --rootdir . tests/netaudio/test_netaudio.py -v -p no:cacheprovider
+
 doc: $(CPP_SOURCES)
 	@doxygen ./mercury.doxyfile
 	cp ./docs_FSM/*.png html
@@ -136,7 +144,7 @@ install: mercury
 	install -m 644 -D systemd/modem.service $(DESTDIR)/etc/systemd/system/modem.service
 
 clean:
-	rm -rf mercury mercury.exe $(OBJECT_FILES)
+	rm -rf mercury mercury.exe $(OBJECT_FILES) tests/netaudio/hmac_test
 	rm -rf html/
 ifeq ($(GUI_ENABLED),1)
 	rm -rf $(IMGUI_OBJECTS) $(GUI_OBJECTS)

@@ -26,6 +26,9 @@
 #include "common/shm_posix.h"
 #include "common/common_defines.h"
 #include "common/os_interop.h"
+#if !defined(_WIN32)
+#include "audioio/netaudio.h"
+#endif
 
 #ifdef MERCURY_GUI_ENABLED
 #ifdef __cplusplus
@@ -1177,6 +1180,33 @@ int audioio_init_internal(char *capture_dev, char *playback_dev, int audio_subsy
 	tap_play = fopen("tap-playback-b.f64", "w");
 #endif
 
+#if !defined(_WIN32)
+	if (audio_subsystem == AUDIO_SUBSYSTEM_SOCKET)
+	{
+		// Socket audio: the host program owns the radio audio. The ring buffers stay
+		// private to this process (no shared memory another program could write TX
+		// audio into), and Mercury does not start without an authenticated host.
+		if (!netaudio_is_dev(capture_dev) || !netaudio_is_dev(playback_dev)
+			|| strcmp(capture_dev, playback_dev) != 0)
+		{
+			fprintf(stderr, "Socket audio: capture and playback must name the same TCP: device\n");
+			exit(EXIT_FAILURE);
+		}
+		uint8_t *buffer_cap = (uint8_t *)malloc(AUDIO_PAYLOAD_BUFFER_SIZE);
+		uint8_t *buffer_play = (uint8_t *)malloc(AUDIO_PAYLOAD_BUFFER_SIZE);
+		capture_buffer = circular_buf_init(buffer_cap, AUDIO_PAYLOAD_BUFFER_SIZE);
+		playback_buffer = circular_buf_init(buffer_play, AUDIO_PAYLOAD_BUFFER_SIZE);
+		clear_buffer(capture_buffer);
+		clear_buffer(playback_buffer);
+		if (!netaudio_open(capture_dev))
+			exit(EXIT_FAILURE);
+		pthread_create(radio_capture, NULL, netaudio_capture_thread, (void *) capture_buffer);
+		pthread_create(radio_playback, NULL, netaudio_playback_thread, (void *) playback_buffer);
+		pthread_create(radio_capture_prep, NULL, radio_capture_prep_thread, (void *) telecom_system);
+		return 0;
+	}
+#endif
+
 #if defined(_WIN32)
 	uint8_t *buffer_cap = (uint8_t *)malloc(AUDIO_PAYLOAD_BUFFER_SIZE);
 	uint8_t *buffer_play = (uint8_t *)malloc(AUDIO_PAYLOAD_BUFFER_SIZE);
@@ -1199,6 +1229,21 @@ int audioio_init_internal(char *capture_dev, char *playback_dev, int audio_subsy
 
 int audioio_deinit(pthread_t *radio_capture, pthread_t *radio_playback, pthread_t *radio_capture_prep)
 {
+#if !defined(_WIN32)
+	if (audio_subsystem == AUDIO_SUBSYSTEM_SOCKET)
+	{
+		shutdown_ = true;
+		netaudio_close();  // wakes the capture thread
+		pthread_join(*radio_capture_prep, NULL);
+		pthread_join(*radio_capture, NULL);
+		pthread_join(*radio_playback, NULL);
+		free(capture_buffer->buffer);
+		circular_buf_free(capture_buffer);
+		free(playback_buffer->buffer);
+		circular_buf_free(playback_buffer);
+		return 0;
+	}
+#endif
     pthread_join(*radio_capture_prep, NULL);
     pthread_join(*radio_capture, NULL);
     pthread_join(*radio_playback, NULL);

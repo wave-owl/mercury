@@ -41,6 +41,11 @@ else
 endif
 
 
+# Socket audio device (TCP:<port>, netaudio.h): Unix-like platforms only
+ifneq ($(OS),Windows_NT)
+               NETAUDIO_OBJS = netaudio.o hmac_sha256.o
+endif
+
 #CFLAGS += -Wall -Og -g -std=gnu99 -I./ffbase/ -I./ffaudio/ -I../../include
 CFLAGS = -Wall -Wno-unused -O3 -g0 -I./ffbase/ -I./ffaudio/ -I../../include -pthread
 
@@ -71,11 +76,17 @@ ffaudio/ffaudio/wasapi.o: ffaudio/ffaudio/wasapi.c
 ffaudio/ffaudio/alsa.o: ffaudio/ffaudio/alsa.c
 	$(CC) $(CFLAGS) -std=c17 -c ffaudio/ffaudio/alsa.c -o ffaudio/ffaudio/alsa.o
 
+netaudio.o: netaudio.c ../../include/audioio/netaudio.h ../../include/audioio/hmac_sha256.h
+	$(CC) $(CFLAGS) -std=gnu11 -c netaudio.c -o netaudio.o
+
+hmac_sha256.o: hmac_sha256.c ../../include/audioio/hmac_sha256.h
+	$(CC) $(CFLAGS) -std=gnu11 -c hmac_sha256.c -o hmac_sha256.o
+
 audioio.o: audioio.c std.h $(OBJS)
 	$(CXX) $(CFLAGS) -std=c++14 -xc++ -c audioio.c -o audioio.o
 
-audioio.a: audioio.o $(OBJS)
-	$(AR) rc audioio.a audioio.o $(OBJS)
+audioio.a: audioio.o $(OBJS) $(NETAUDIO_OBJS)
+	$(AR) rc audioio.a audioio.o $(OBJS) $(NETAUDIO_OBJS)
 
 .PHONY: clean
 clean:
