@@ -1,0 +1,344 @@
+{
+  "gitlinks": {},
+  "vendored": [
+    {
+      "path": "source/audioio/ffaudio",
+      "repository": null,
+      "commit": null,
+      "licenses": [
+        "source/audioio/ffaudio/UNLICENSE"
+      ],
+      "evidence": [
+        "source/audioio/ffaudio/README.md",
+        "Makefile"
+      ]
+    },
+    {
+      "path": "source/audioio/ffbase",
+      "repository": null,
+      "commit": null,
+      "licenses": [
+        "source/audioio/ffbase/UNLICENSE"
+      ],
+      "evidence": [
+        "source/audioio/ffbase/README.md",
+        "Makefile"
+      ]
+    },
+    {
+      "path": "tests/gr-hermes_ofdm/lib",
+      "repository": null,
+      "commit": null,
+      "licenses": [
+        "LICENSE"
+      ],
+      "evidence": [
+        "tests/gr-hermes_ofdm/lib/CMakeLists.txt",
+        "Makefile"
+      ]
+    },
+    {
+      "path": "third_party",
+      "repository": null,
+      "commit": null,
+      "licenses": [
+        "third_party/imgui/LICENSE.txt",
+        "third_party/imgui/examples/libs/glfw/COPYING.txt"
+      ],
+      "evidence": [
+        "third_party/glfw/include/GLFW/glfw3.h",
+        "Makefile"
+      ]
+    }
+  ],
+  "models": [],
+  "external_libraries": [
+    {
+      "name": "Conditional source requirements declared by Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by examples/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "examples/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by source/audioio/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "source/audioio/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/apps/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/apps/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/docs/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/docs/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/docs/doxygen/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/docs/doxygen/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/grc/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/grc/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/include/hermes_ofdm/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/include/hermes_ofdm/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/lib/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/lib/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/python/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/python/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/swig/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tests/gr-hermes_ofdm/swig/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_android_opengl3/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_android_opengl3/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_android_opengl3/android/app/build.gradle",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_android_opengl3/android/app/build.gradle"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_android_opengl3/android/build.gradle",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_android_opengl3/android/build.gradle"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_apple_metal/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_apple_metal/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_apple_opengl2/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_apple_opengl2/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_metal/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_glfw_metal/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_opengl2/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_glfw_opengl2/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_opengl3/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_glfw_opengl3/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_vulkan/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_glfw_vulkan/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_vulkan/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_glfw_vulkan/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_wgpu/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_glfw_wgpu/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glut_opengl2/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_glut_opengl2/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_null/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_null/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_metal/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl2_metal/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_opengl2/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl2_opengl2/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_opengl3/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl2_opengl3/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_sdlrenderer2/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl2_sdlrenderer2/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_vulkan/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl2_vulkan/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_wgpu/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl2_wgpu/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_metal/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl3_metal/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_opengl3/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl3_opengl3/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_sdlgpu3/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl3_sdlgpu3/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_sdlrenderer3/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl3_sdlrenderer3/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_vulkan/Makefile",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl3_vulkan/Makefile"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_wgpu/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "third_party/imgui/examples/example_sdl3_wgpu/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Platform audio backends (ALSA/PulseAudio/CoreAudio/Windows)",
+      "version": "unresolved; conditional source declaration",
+      "evidence": [
+        "Makefile"
+      ]
+    },
+    {
+      "name": "Threads",
+      "version": "unresolved; conditional source declaration",
+      "evidence": [
+        "Makefile"
+      ]
+    },
+    {
+      "name": "GUI optional GLFW/OpenGL",
+      "version": "unresolved; conditional source declaration",
+      "evidence": [
+        "Makefile"
+      ]
+    },
+    {
+      "name": "tests/gr-hermes_ofdm GNU Radio/Boost/Python test dependencies",
+      "version": "unresolved; conditional source declaration",
+      "evidence": [
+        "Makefile"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2175 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "56ba88607572bf61",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7c32bcb2d3b7220e4eed067f7a651f0b2bf40080"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "66ba8fa846a870e8e69b9af283eb80c3d3549d08a38f3f2193d449aad7e92e1d"
+        }
+      ],
+      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/glfw/lib/glfw3.dll",
+      "type": "file"
+    },
+    {
+      "bom-ref": "5c4588b6b724fe1d",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "498168cf495e7a56bf5a3c44cc2180daa390b2c7"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4cc9bdcca87c877d9d474f60c506a1e353689f1465f2bfd53c30fedab994d776"
+        }
+      ],
+      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/imgui/.github/workflows/build.yml",
+      "type": "file"
+    },
+    {
+      "bom-ref": "7ee0402ffd9c1689",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "05fb0500c5af8b26088fc6d4391ff16179b347b1"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8a944b822707f4aee86e2e735f3b45f6693329ebf2bed33eeb1d35872d89f660"
+        }
+      ],
+      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/imgui/.github/workflows/static-analysis.yml",
+      "type": "file"
+    },
+    {
+      "bom-ref": "a677b089d442ad1a",
+      "cpe": "cpe:2.3:a:GLFW:GLFW:3.4.0:*:*:*:*:*:*:*",
+      "name": "GLFW",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "pe-binary-package-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "binary"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "pe-binary"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/third_party/glfw/lib/glfw3.dll"
+        }
+      ],
+      "type": "application",
+      "version": "3.4.0"
+    },
+    {
+      "bom-ref": "cmake:14bcff2231daae55eda9f246b7ed90bbd391cd3397f6b21f92772155f80bce67",
+      "name": "Boost",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Boost \"1.35\" COMPONENTS filesystem system"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:1aae099a58b09dc61588ff54429a5b447272215e7193d546ecf4d012bfe42978",
+      "name": "SDL2",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_sdl2_wgpu/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "SDL2 REQUIRED"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:1d4344e6f433bebe80c0c1ecf3c5ca771a1407dfc74db4c7df04a99a19585e13",
+      "name": "Doxygen",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/docs/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Doxygen"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:27a20fc4e35241b66b1c835ab429e568a94b020e91c4f74aba9fe5be4248619c",
+      "name": "Doxygen",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Doxygen"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:433678c5726f0f129883fd8935c4554432da2729fb9e637e0279174c58572e5c",
+      "name": "Gnuradio",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Gnuradio \"3.7.2\" REQUIRED"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:43d6d106bd062ed2b2bf431b3f48d0ec2ae1486dcb59bbbb3341e3bc2d7178d6",
+      "name": "CppUnit",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "CppUnit"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:5753a9b854abf587d07e008eee089ac3b129844641c6d0a279ad1b032e55fc2b",
+      "name": "glfw3",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_glfw_wgpu/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "glfw3 REQUIRED"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:68ab4e00225349cb5f4d58dbe36f02c9e1f77821b5021317de438c60516cdfa7",
+      "name": "Vulkan",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_glfw_vulkan/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Vulkan REQUIRED"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:9a46085f996f0c73c8f15e06b7dc893f45f920aca2b845a4a61b91606c93e635",
+      "name": "Dawn",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_glfw_wgpu/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Dawn"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:a3619666083dbd503d66cd2a33908850fe25c039ab21293191d056a18defb881",
+      "name": "Threads",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_sdl2_wgpu/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Threads"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:a8560b202257caf2e5ccd751da4842299a2ca960eaf1330bf7e6d05f5a41ea98",
+      "name": "Log4cpp",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/cmake/Modules/GrMiscUtils.cmake"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Log4cpp"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:a8e7206a3713077b0695f34193d3366493e1571239c532631c7b261b7f6d23fe",
+      "name": "Dawn",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_sdl3_wgpu/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Dawn"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:a9e61681a968b20f53f6fdc1d503a2f1ef65b68eb4b047fdfbb58ed85cdc1ce7",
+      "name": "Dawn",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_sdl2_wgpu/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Dawn"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:ab5dcb0434d573d24d8d4c6db168cc962f6ac8b65c9d63b7c78ee02639f75db8",
+      "name": "PythonLibs",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/cmake/Modules/GrSwig.cmake"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "PythonLibs 2"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:c23e12c944fbb3411fda51bdddb495175dc93c59ced9a27645de8c3151dda7a1",
+      "name": "Threads",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_sdl3_wgpu/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "Threads"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:d057b251284217187c6ab087996b14763a7487173df4bb0bc49f3202c26c99ad",
+      "name": "PythonLibs",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/swig/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "PythonLibs 2"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:d6628b652a0608f6a638bcc4e069553e33a2b96a1a6e6ceb7f3e03befaa267e9",
+      "name": "PythonInterp",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/cmake/Modules/GrPython.cmake"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "PythonInterp 2"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:e2dbe4ef9942e96f407bd52be64755236e36ce2b2206e3dd1570c368a2bf2334",
+      "name": "SWIG",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "tests/gr-hermes_ofdm/swig/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "SWIG"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:f96bd527aeb7100e165db3d8c763726ed8da94995a34f594b8a20681fc82ef5a",
+      "name": "SDL3",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "third_party/imgui/examples/example_sdl3_wgpu/CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:0",
+      "name": "Conditional source requirements declared by Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:1",
+      "name": "Conditional source requirements declared by examples/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"examples/Makefile\", \"sha256\": \"6eba00e7084b750ae2fc21f62f3ae10ce165a8f7e67f3173d060065e0a980fac\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:10",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/python/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/python/CMakeLists.txt\", \"sha256\": \"c63f7c6008e122cfffbaeae4b6aaf447fdfbeacef33ca681d0f131ddc1751316\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:11",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/swig/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/swig/CMakeLists.txt\", \"sha256\": \"bb989ffe934c8d3636b78d003f79d19bd4eef51e11a45eef3d79de4e8af8f067\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:12",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_android_opengl3/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_android_opengl3/CMakeLists.txt\", \"sha256\": \"d59fb499e2b450bdf7c62639c53df46d6c1dcef314b6c025e6751aa04948c53c\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:13",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_android_opengl3/android/app/build.gradle",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_android_opengl3/android/app/build.gradle\", \"sha256\": \"2764e357caa70f531dc0ba336029a5f39b7293d384bbf032dec39489c5bc5571\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:14",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_android_opengl3/android/build.gradle",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_android_opengl3/android/build.gradle\", \"sha256\": \"47774018405adb4336f34aa05a2fdc6ca8c2175e5efc5b705f1ecb101eae7094\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:15",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_apple_metal/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_apple_metal/Makefile\", \"sha256\": \"00f9526eda8862293d6cd81e129fa7cc13bd3e8fd93bc70ba63ca343af8540ec\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:16",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_apple_opengl2/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_apple_opengl2/Makefile\", \"sha256\": \"dd7a1f2f2c1b3415fe48ef342dc9ab60bae6a1edb50ea73c20e48eb640b8f1c9\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:17",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_metal/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_glfw_metal/Makefile\", \"sha256\": \"387b7385b278528e48f7fc04727403f2f3a12c596b7e91aae477a4e958e8de96\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:18",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_opengl2/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_glfw_opengl2/Makefile\", \"sha256\": \"5c007c48db20eb0f237e8726f0456edb53138f92030b2bef1f2a9615a095ae60\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:19",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_opengl3/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_glfw_opengl3/Makefile\", \"sha256\": \"3f9e8d5171627e61635436369bde6707b21d357e96ca25a452e41a7c5c36a542\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:2",
+      "name": "Conditional source requirements declared by source/audioio/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"source/audioio/Makefile\", \"sha256\": \"28465794d8012640fbfead441a71b8588ca466c85b254e40755092cb23f8db93\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:20",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_vulkan/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_glfw_vulkan/CMakeLists.txt\", \"sha256\": \"b00ed37a7a9ec623bfb509b54a9d129dafcfb1590fadec74884648c4683c8b3c\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:21",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_vulkan/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_glfw_vulkan/Makefile\", \"sha256\": \"e9c4e6e73d49324d2ccf780238227cec05b7f1e6167c2a92f95828dead406f17\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:22",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glfw_wgpu/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_glfw_wgpu/CMakeLists.txt\", \"sha256\": \"8b214b82bddd78ab9e4873dca1b99d6f893e8fe9b7231b31ec990ab91a64e34a\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:23",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_glut_opengl2/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_glut_opengl2/Makefile\", \"sha256\": \"bd30313c292667a24c5d333c72c714c043106c51c7159b66512bbcc20edee6c4\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:24",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_null/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_null/Makefile\", \"sha256\": \"3300943a9d2cf4cc9636da83f03feae00e4ccd29445976e1cc8c32d1d18fe577\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:25",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_metal/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl2_metal/Makefile\", \"sha256\": \"aec1ac5e25ed423d9d25d5711be7114bb9a8cc2e5e62c641a4c0eaf579935856\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:26",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_opengl2/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl2_opengl2/Makefile\", \"sha256\": \"7112397f365b176ee6c9993b2bf617174bfaf850a741dfa4aafe2e629ae7cf61\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:27",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_opengl3/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl2_opengl3/Makefile\", \"sha256\": \"f8306c387dd6b0248986f0f7fe1ebd20e2cd6ae796b6085c88971d5ef75359ee\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:28",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_sdlrenderer2/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl2_sdlrenderer2/Makefile\", \"sha256\": \"fda4ab50e7aecef013532425c2fc74bc6c708869dba25d905fc4e786e4f5b702\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:29",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_vulkan/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl2_vulkan/Makefile\", \"sha256\": \"82d5d318997decdd161f362d78e2b4f1f829d914c3cc5be02564e77dd95542e8\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:3",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/CMakeLists.txt\", \"sha256\": \"9f658dca8522008cf5f55792c44468d59673eaf2a4f4e9f3370abfd54db270ec\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:30",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl2_wgpu/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl2_wgpu/CMakeLists.txt\", \"sha256\": \"c6c889d45cdba6320493f9411f206ae9f1316226abae409292caf03497f595df\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:31",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_metal/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl3_metal/Makefile\", \"sha256\": \"a57cc456cbb39d32aecf42898956d3ea93e89eaf5ab6fc939380b12594271817\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:32",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_opengl3/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/Makefile\", \"sha256\": \"173d61d5846fe06e1fbf445ab3b4eca7406edab2100e2b3441b3b78a2adb7c98\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:33",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_sdlgpu3/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl3_sdlgpu3/Makefile\", \"sha256\": \"70e1670fbad9c45c4470c2f9c31cf8db51d010d39c1d1d1339ef4d94dce31b7c\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:34",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_sdlrenderer3/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl3_sdlrenderer3/Makefile\", \"sha256\": \"2cac71c9c4bdc025cb3abd76ce231d85db2b4a7ac88cb152e5d3aaf8db5fbbee\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:35",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_vulkan/Makefile",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl3_vulkan/Makefile\", \"sha256\": \"a55f2602c7506cf944dbd1c12594af6abb0447a438a4d5fb05feba32edbc6f27\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:36",
+      "name": "Conditional source requirements declared by third_party/imgui/examples/example_sdl3_wgpu/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"third_party/imgui/examples/example_sdl3_wgpu/CMakeLists.txt\", \"sha256\": \"3aeedef012c322370cdc6cb805aa66c15a767acdebf598b5ac26e85d523a4486\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:37",
+      "name": "Platform audio backends (ALSA/PulseAudio/CoreAudio/Windows)",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; conditional source declaration"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:38",
+      "name": "Threads",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; conditional source declaration"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:39",
+      "name": "GUI optional GLFW/OpenGL",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; conditional source declaration"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:4",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/apps/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/apps/CMakeLists.txt\", \"sha256\": \"a3a96ca93629c41b7a61d3c57dae5e8d41ddd05499a5894e8a8e62c3fd943900\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:40",
+      "name": "tests/gr-hermes_ofdm GNU Radio/Boost/Python test dependencies",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; conditional source declaration"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:5",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/docs/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/docs/CMakeLists.txt\", \"sha256\": \"0fba14ed53dac3bd8d6c7201f74ec4d504aa0df2173d5e35eeb868c913b04ed5\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:6",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/docs/doxygen/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/docs/doxygen/CMakeLists.txt\", \"sha256\": \"7240c290efdfe31e3122464da65354b364144c70cf21d14fd260762eac555862\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:7",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/grc/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/grc/CMakeLists.txt\", \"sha256\": \"382c9e5e86aff368cb9eab576747c43185c67ca43ccf5d31daf33c77bc980448\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:8",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/include/hermes_ofdm/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/include/hermes_ofdm/CMakeLists.txt\", \"sha256\": \"39baed95aa59fb2e193a57decb40adc39a8e22096675ec353eb62f177c1f629d\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:9",
+      "name": "Conditional source requirements declared by tests/gr-hermes_ofdm/lib/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tests/gr-hermes_ofdm/lib/CMakeLists.txt\", \"sha256\": \"1c2814fbab0d2e2ae494039b76b92d5524581c46d48704b4789d737738e435b5\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "pkg:github/actions/checkout@v6?package-id=0bd618b3907a3e01",
+      "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6:*:*:*:*:*:*:*",
+      "name": "actions/checkout",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/third_party/imgui/.github/workflows/static-analysis.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/checkout@v6",
+      "type": "library",
+      "version": "v6"
+    },
+    {
+      "bom-ref": "pkg:github/actions/checkout@v6?package-id=2b916eec267023fa",
+      "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6:*:*:*:*:*:*:*",
+      "name": "actions/checkout",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/third_party/imgui/.github/workflows/build.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/checkout@v6",
+      "type": "library",
+      "version": "v6"
+    },
+    {
+      "bom-ref": "vendored:source/audioio/ffaudio",
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "source/audioio/ffaudio",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"source/audioio/ffaudio/UNLICENSE\", \"sha256\": \"7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}, {\"path\": \"source/audioio/ffaudio/README.md\", \"sha256\": \"ab43358d6340da1c3db2a2ed938d3e162b1717b4e34ce822e5cf93ac3e70f456\"}, {\"path\": \"source/audioio/ffaudio/UNLICENSE\", \"sha256\": \"7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/aaudio.c\", \"sha256\": \"c4225b9c71ab45bc93942236f17f574325c3257fc7574d8b35e2bfae3b6ee170\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/alsa.c\", \"sha256\": \"e765b6a4006bcf185a2e9604630ec7a38a52437f8622615ba1cfc4e8fc8a87f8\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/audio.h\", \"sha256\": \"56c871ae9fa2410eb747f86cc713e930f626b1f042ac04964db53bab71fec276\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/coreaudio.c\", \"sha256\": \"246a2713c59171eecec5b8b674a6e1836b7dc1bf4c36b16eb905c5302a9c9aa1\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/dsound.c\", \"sha256\": \"2a6c6c9c4c75f2456a80528176467caee416d2b0203f0afe9f66e6b808956c88\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/jack.c\", \"sha256\": \"d90287d434bf6626f3aec578f4a7b9c7a31e84fb1fea1e92a40e11da92ae4d43\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/oss.c\", \"sha256\": \"da099989d05f481577af087273bfe2ae449053bdb87edfdf515e0702d4600865\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/pulse.c\", \"sha256\": \"4b42523305f5ee0eca9f2efe8b9ae7dc4072b1878d026c4b03121b2135ef41ba\"}, {\"path\": \"source/audioio/ffaudio/ffaudio/wasapi.c\", \"sha256\": \"6e56214c18501b188b5b15ae94b2ebc2d1b2346fabcfa860a54eb359af606808\"}, {\"path\": \"source/audioio/ffaudio/ffbase/args.h\", \"sha256\": \"93dccfb14800816203ddf15133ad2ebb78f9bac9af90765e38c4ef56a469729e\"}, {\"path\": \"source/audioio/ffaudio/ffbase/atomic.h\", \"sha256\": \"5cefefd6cbd10ec1238bd6ecbc27ac23ddea61126ba8faff5c1a719a7f7c9e51\"}, {\"path\": \"source/audioio/ffaudio/ffbase/base.h\", \"sha256\": \"8827bf239c1e59af241cef7d90b208cf81bce320daf3267dfec3acfae97e8a86\"}, {\"path\": \"source/audioio/ffaudio/ffbase/chain.h\", \"sha256\": \"5760dcb98937c16c742756e7ce57ff42398e5261c86faf4b26e829dd3eff2e8f\"}, {\"path\": \"source/audioio/ffaudio/ffbase/conf.h\", \"sha256\": \"b45c77aa7aeb5c28edcdb0c2838a7cb4c8d22c9d9d35b78a4cbb034c718bdaba\"}, {\"path\": \"source/audioio/ffaudio/ffbase/conf.mk\", \"sha256\": \"42955d3b949b0cf60d59c26c57f1044090940c98f18b89fe649730abac9b9b0f\"}, {\"path\": \"source/audioio/ffaudio/ffbase/cpuid.h\", \"sha256\": \"2c068a255c193d462abfe94a47802cdaf620b1c0a64f132218fc42166585fa7d\"}, {\"path\": \"source/audioio/ffaudio/ffbase/crc32.h\", \"sha256\": \"f447c0dd59cbdc6bf0b0508014db95d4e9537fce51759f9a43f542a0b6ffc4af\"}, {\"path\": \"source/audioio/ffaudio/ffbase/fntree.h\", \"sha256\": \"b3dc3e81dc52ddeb378ca0aadc7a86416dc971a75a6d10697762e154f4657a78\"}, {\"path\": \"source/audioio/ffaudio/ffbase/json-scheme.h\", \"sha256\": \"34974c8dca30161b69448d9e1a83be4df54cf8cc8631298dbad56459958ea11e\"}, {\"path\": \"source/audioio/ffaudio/ffbase/json-writer.h\", \"sha256\": \"9bbdd86601a1b56429e5fb956f1d38012d720c570f2599dc8da982dec032627e\"}, {\"path\": \"source/audioio/ffaudio/ffbase/json.h\", \"sha256\": \"c9dbd8554bf34ce711840ed060a00e19addc3f2c4ce709deaeca840f4d9846bd\"}, {\"path\": \"source/audioio/ffaudio/ffbase/list.h\", \"sha256\": \"a4a091240361209268504ca81ed8643871a8e2cddc76fb15de8bdcc508a8b424\"}, {\"path\": \"source/audioio/ffaudio/ffbase/lock.h\", \"sha256\": \"9ad3bc515c5133dda41b49c9025f69b3f62b26bb07781f71c5b8f03768fc9fa2\"}, {\"path\": \"source/audioio/ffaudio/ffbase/map.h\", \"sha256\": \"4811c3e07f5db71160c6c369d52a9dc9544f6d8bdade8c98b65c3fbeb3636f50\"}, {\"path\": \"source/audioio/ffaudio/ffbase/mem-print.h\", \"sha256\": \"5ab770b40de15b95ebe9fbf0c951f875fea2a8ae4fd77cc37571e09b94b3b314\"}, {\"path\": \"source/audioio/ffaudio/ffbase/murmurhash3.h\", \"sha256\": \"3f7a52f2d5ae0a4c45b20711d5977f3976fb6a734614239a789f76cbd40f9e31\"}, {\"path\": \"source/audioio/ffaudio/ffbase/rbtree.h\", \"sha256\": \"7c18078b4b3f674106f0bed1926a63ca374a20489eaddb462bbfca38e9fefcfc\"}, {\"path\": \"source/audioio/ffaudio/ffbase/ring.h\", \"sha256\": \"8ba479bdc5bbeb238da76f770dda493cac21104aea6adc5d94b430270f935663\"}, {\"path\": \"source/audioio/ffaudio/ffbase/ringqueue.h\", \"sha256\": \"acf52976428b12eaa2a2de5f9ab4106c480353b88e49538c76910277c54b0721\"}, {\"path\": \"source/audioio/ffaudio/ffbase/slice.h\", \"sha256\": \"3c24c6db48ff39bf7d2d65a96335c4dbb7d0d14009d32e95a7d9f9f735b1bda4\"}, {\"path\": \"source/audioio/ffaudio/ffbase/sort-insertion.h\", \"sha256\": \"183d837c7fb65013cd90f46c3e3d77d6959e2059806fbd759b16a79a380a1aa9\"}, {\"path\": \"source/audioio/ffaudio/ffbase/sort-merge.h\", \"sha256\": \"b09e302c036940ffdd33a3fc9079177a98af7d0d617c3fd9727500a8849ef509\"}, {\"path\": \"source/audioio/ffaudio/ffbase/sort.c\", \"sha256\": \"c988ed46718c18681bf94f41b7ae97d8f4020014a62bd168506bef539c7a0323\"}, {\"path\": \"source/audioio/ffaudio/ffbase/sort.h\", \"sha256\": \"5c97dcc85d94c02d713521dc2c248b288a792c1a69837823eef3fbf1f7a52f10\"}, {\"path\": \"source/audioio/ffaudio/ffbase/str-convert.h\", \"sha256\": \"812715ab7742f759d79550fbebc3f656fa9bcca3b79c292248518eb480c531c8\"}, {\"path\": \"source/audioio/ffaudio/ffbase/str-format.c\", \"sha256\": \"69748dc73727e66a1bd7209a07b4bcbb79cd2fa431aa257328797429ef491636\"}, {\"path\": \"source/audioio/ffaudio/ffbase/str-format.h\", \"sha256\": \"0d706b898fafe69584e84885c97e74386909ceb072aec0be5a85f532f525be9e\"}, {\"path\": \"source/audioio/ffaudio/ffbase/string.h\", \"sha256\": \"4bf9447810c3b7a5ff2a63a52f085fbaf4e85af029275153c7beae3432f3466a\"}, {\"path\": \"source/audioio/ffaudio/ffbase/stringz.h\", \"sha256\": \"a43c2bd9e3fbb6a6cd9d07a1ec048c7cde55e88af1aeb3ee46f645712a4857d1\"}, {\"path\": \"source/audioio/ffaudio/ffbase/time.h\", \"sha256\": \"93aa4e53ced4feb1e613d9360ede0b8906953d4e497f6ce0eb2904b4d755bc52\"}, {\"path\": \"source/audioio/ffaudio/ffbase/unicode.h\", \"sha256\": \"a53e0eefdde6c90606500d52cd4e2b33755c47949599292fb5a5ec17b330c316\"}, {\"path\": \"source/audioio/ffaudio/ffbase/vector.h\", \"sha256\": \"8233c6b8805a49c7c9a97d16f4d20b7f0ae645cb5cca70ae469da9b94644b6c8\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "unknown upstream origin"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "vendored:source/audioio/ffbase",
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "source/audioio/ffbase",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"source/audioio/ffbase/UNLICENSE\", \"sha256\": \"7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}, {\"path\": \"source/audioio/ffbase/README.md\", \"sha256\": \"06134137a2a279091afef76a4fbbc8ecb1652bae54ff4109ce946b456d909888\"}, {\"path\": \"source/audioio/ffbase/UNLICENSE\", \"sha256\": \"7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c\"}, {\"path\": \"source/audioio/ffbase/conf.mk\", \"sha256\": \"42955d3b949b0cf60d59c26c57f1044090940c98f18b89fe649730abac9b9b0f\"}, {\"path\": \"source/audioio/ffbase/doc/slice.md\", \"sha256\": \"c0f8ed80bf95e7454595f275179063d33d4e20a8ca771f02adf8cc447858e049\"}, {\"path\": \"source/audioio/ffbase/doc/sse-guide.md\", \"sha256\": \"aecf6cc2cf710912af289eadeb3c251ab7f347e68a83ac4f81724f9c7f10da28\"}, {\"path\": \"source/audioio/ffbase/ffbase/args.h\", \"sha256\": \"93dccfb14800816203ddf15133ad2ebb78f9bac9af90765e38c4ef56a469729e\"}, {\"path\": \"source/audioio/ffbase/ffbase/atomic.h\", \"sha256\": \"5cefefd6cbd10ec1238bd6ecbc27ac23ddea61126ba8faff5c1a719a7f7c9e51\"}, {\"path\": \"source/audioio/ffbase/ffbase/base.h\", \"sha256\": \"a71120d6ba05a71f18e616c4acacf134b48e4fa246d40b4014dd0d5057dedfac\"}, {\"path\": \"source/audioio/ffbase/ffbase/chain.h\", \"sha256\": \"5760dcb98937c16c742756e7ce57ff42398e5261c86faf4b26e829dd3eff2e8f\"}, {\"path\": \"source/audioio/ffbase/ffbase/conf.h\", \"sha256\": \"b45c77aa7aeb5c28edcdb0c2838a7cb4c8d22c9d9d35b78a4cbb034c718bdaba\"}, {\"path\": \"source/audioio/ffbase/ffbase/cpuid.h\", \"sha256\": \"2c068a255c193d462abfe94a47802cdaf620b1c0a64f132218fc42166585fa7d\"}, {\"path\": \"source/audioio/ffbase/ffbase/crc32.h\", \"sha256\": \"f447c0dd59cbdc6bf0b0508014db95d4e9537fce51759f9a43f542a0b6ffc4af\"}, {\"path\": \"source/audioio/ffbase/ffbase/fntree.h\", \"sha256\": \"b3dc3e81dc52ddeb378ca0aadc7a86416dc971a75a6d10697762e154f4657a78\"}, {\"path\": \"source/audioio/ffbase/ffbase/json-scheme.h\", \"sha256\": \"34974c8dca30161b69448d9e1a83be4df54cf8cc8631298dbad56459958ea11e\"}, {\"path\": \"source/audioio/ffbase/ffbase/json-writer.h\", \"sha256\": \"9bbdd86601a1b56429e5fb956f1d38012d720c570f2599dc8da982dec032627e\"}, {\"path\": \"source/audioio/ffbase/ffbase/json.h\", \"sha256\": \"c9dbd8554bf34ce711840ed060a00e19addc3f2c4ce709deaeca840f4d9846bd\"}, {\"path\": \"source/audioio/ffbase/ffbase/list.h\", \"sha256\": \"a4a091240361209268504ca81ed8643871a8e2cddc76fb15de8bdcc508a8b424\"}, {\"path\": \"source/audioio/ffbase/ffbase/lock.h\", \"sha256\": \"9ad3bc515c5133dda41b49c9025f69b3f62b26bb07781f71c5b8f03768fc9fa2\"}, {\"path\": \"source/audioio/ffbase/ffbase/map.h\", \"sha256\": \"4811c3e07f5db71160c6c369d52a9dc9544f6d8bdade8c98b65c3fbeb3636f50\"}, {\"path\": \"source/audioio/ffbase/ffbase/mem-print.h\", \"sha256\": \"5ab770b40de15b95ebe9fbf0c951f875fea2a8ae4fd77cc37571e09b94b3b314\"}, {\"path\": \"source/audioio/ffbase/ffbase/murmurhash3.h\", \"sha256\": \"3f7a52f2d5ae0a4c45b20711d5977f3976fb6a734614239a789f76cbd40f9e31\"}, {\"path\": \"source/audioio/ffbase/ffbase/rbtree.h\", \"sha256\": \"7c18078b4b3f674106f0bed1926a63ca374a20489eaddb462bbfca38e9fefcfc\"}, {\"path\": \"source/audioio/ffbase/ffbase/ring.h\", \"sha256\": \"8ba479bdc5bbeb238da76f770dda493cac21104aea6adc5d94b430270f935663\"}, {\"path\": \"source/audioio/ffbase/ffbase/ringqueue.h\", \"sha256\": \"acf52976428b12eaa2a2de5f9ab4106c480353b88e49538c76910277c54b0721\"}, {\"path\": \"source/audioio/ffbase/ffbase/slice.h\", \"sha256\": \"3c24c6db48ff39bf7d2d65a96335c4dbb7d0d14009d32e95a7d9f9f735b1bda4\"}, {\"path\": \"source/audioio/ffbase/ffbase/sort-insertion.h\", \"sha256\": \"183d837c7fb65013cd90f46c3e3d77d6959e2059806fbd759b16a79a380a1aa9\"}, {\"path\": \"source/audioio/ffbase/ffbase/sort-merge.h\", \"sha256\": \"b09e302c036940ffdd33a3fc9079177a98af7d0d617c3fd9727500a8849ef509\"}, {\"path\": \"source/audioio/ffbase/ffbase/sort.c\", \"sha256\": \"c988ed46718c18681bf94f41b7ae97d8f4020014a62bd168506bef539c7a0323\"}, {\"path\": \"source/audioio/ffbase/ffbase/sort.h\", \"sha256\": \"5c97dcc85d94c02d713521dc2c248b288a792c1a69837823eef3fbf1f7a52f10\"}, {\"path\": \"source/audioio/ffbase/ffbase/str-convert.h\", \"sha256\": \"812715ab7742f759d79550fbebc3f656fa9bcca3b79c292248518eb480c531c8\"}, {\"path\": \"source/audioio/ffbase/ffbase/str-format.c\", \"sha256\": \"69748dc73727e66a1bd7209a07b4bcbb79cd2fa431aa257328797429ef491636\"}, {\"path\": \"source/audioio/ffbase/ffbase/str-format.h\", \"sha256\": \"0d706b898fafe69584e84885c97e74386909ceb072aec0be5a85f532f525be9e\"}, {\"path\": \"source/audioio/ffbase/ffbase/string.h\", \"sha256\": \"4bf9447810c3b7a5ff2a63a52f085fbaf4e85af029275153c7beae3432f3466a\"}, {\"path\": \"source/audioio/ffbase/ffbase/stringz.h\", \"sha256\": \"a43c2bd9e3fbb6a6cd9d07a1ec048c7cde55e88af1aeb3ee46f645712a4857d1\"}, {\"path\": \"source/audioio/ffbase/ffbase/time.h\", \"sha256\": \"93aa4e53ced4feb1e613d9360ede0b8906953d4e497f6ce0eb2904b4d755bc52\"}, {\"path\": \"source/audioio/ffbase/ffbase/unicode.h\", \"sha256\": \"a53e0eefdde6c90606500d52cd4e2b33755c47949599292fb5a5ec17b330c316\"}, {\"path\": \"source/audioio/ffbase/ffbase/vector.h\", \"sha256\": \"8233c6b8805a49c7c9a97d16f4d20b7f0ae645cb5cca70ae469da9b94644b6c8\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "unknown upstream origin"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "vendored:tests/gr-hermes_ofdm/lib",
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "tests/gr-hermes_ofdm/lib",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef\"}, {\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/CMakeLists.txt\", \"sha256\": \"1c2814fbab0d2e2ae494039b76b92d5524581c46d48704b4789d737738e435b5\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/deframer_impl.cc\", \"sha256\": \"9db04a54019fcc476d5a965044955160f6d9fea586b98f697d49c531dd74bfda\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/deframer_impl.h\", \"sha256\": \"b8b59c726d39bb6c89875afaf941409f65488f944b629e1c5e19d18e3745c9e2\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/framer_impl.cc\", \"sha256\": \"e9c41ab0050b5b50874fa1e4e71cf6bb6bcb60577385bbe36b9299dba5d7adca\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/framer_impl.h\", \"sha256\": \"4690545a56067a0aeb926e921eb2f7cf92b78a24b92fbbcf386fda2c79ebd7b3\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/gi_adder_impl.cc\", \"sha256\": \"2249a24b815d6032039800ec97c5d2248655db666c6292ac69162f7da9e59cdc\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/gi_adder_impl.h\", \"sha256\": \"d496e1de5b37c473d5201a5d2cf58ecee82988a5a0247589a7b349a256414aff\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/gi_remover_impl.cc\", \"sha256\": \"90d9c1f748cbe03c34f64215791b037698207ef72ee0668f2fbfe55259d5be90\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/gi_remover_impl.h\", \"sha256\": \"04e566c28bd9d64ce80e4dd8f663bdd6eff77f341171ee299e4636ec956175cf\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/qa_hermes_ofdm.cc\", \"sha256\": \"cb4ff1e03a0cc5ecf2613e8c40da246257d80ba65ed35223638b414006386fde\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/qa_hermes_ofdm.h\", \"sha256\": \"cf893f63b0666adfee4f659e2dd10ea9e9d05a6b085af88fb1efe51980229616\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/test_hermes_ofdm.cc\", \"sha256\": \"50fe5826c2de7a46320ef5ef00379545a8385bba3425af2cf1628d2eafe86c42\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/zero_depadder_impl.cc\", \"sha256\": \"cf59b8f064d6e2326906e44cf56e63c3beb063b670bd1f35d78fbb629d2b4166\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/zero_depadder_impl.h\", \"sha256\": \"d94cedb4a12eadee53133a70041b4e08ac082069817b0f11bd3698aa325388ad\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/zero_padder_impl.cc\", \"sha256\": \"0685f90d111ad9f8be947f22a8e0a4e9a00650c5dab79ab1038c48dd1906abdf\"}, {\"path\": \"tests/gr-hermes_ofdm/lib/zero_padder_impl.h\", \"sha256\": \"2e2b58a33ed252223b17416c5f1d9b8ff260dae2f48625532d32dd0d00cace5a\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "unknown upstream origin"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "vendored:third_party",
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "third_party",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"third_party/imgui/LICENSE.txt\", \"sha256\": \"173506a2d6f7fb67990d257fb2507f188690eca39060c39469ae7bef43aae2a3\"}, {\"path\": \"third_party/imgui/examples/libs/glfw/COPYING.txt\", \"sha256\": \"da2fb2c802537710cdebe8881b55356d07b88a6dbd7e4b912ac3091f8e6b5f6a\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"Makefile\", \"sha256\": \"58a017ca20ec2f0776a00defaf505d4c006dcdb777463a95bd31b0479e997fda\"}, {\"path\": \"third_party/glfw/include/GLFW/glfw3.h\", \"sha256\": \"aa370985f6b493bbe0358a36ab49f5780a6397c0209c6d98a62143dea595b73c\"}, {\"path\": \"third_party/glfw/include/GLFW/glfw3native.h\", \"sha256\": \"40035881fdc02a9ab265c2086338f749a0411e1c15b68fada678fa34e8bd8958\"}, {\"path\": \"third_party/glfw/lib/glfw3.dll\", \"sha256\": \"66ba8fa846a870e8e69b9af283eb80c3d3549d08a38f3f2193d449aad7e92e1d\"}, {\"path\": \"third_party/glfw/lib/libglfw3.a\", \"sha256\": \"d1092317454544d569951528fccf65f08852ed501315812409687e7fee9f4067\"}, {\"path\": \"third_party/glfw/lib/libglfw3dll.a\", \"sha256\": \"4454a3ea4b94089e825c664823e8ede07fb322baa6f7d5844171e25ba2d3026a\"}, {\"path\": \"third_party/imgui/.editorconfig\", \"sha256\": \"6da5b9a182522f84c23fa2c7af67f9cba7dfc31e2d16255733a090f360df5a26\"}, {\"path\": \"third_party/imgui/.gitattributes\", \"sha256\": \"14e7aafb0cfe8cc44ee59c6b0aa8ce72f8735b478b0adc2f45f14db77d78d3c0\"}, {\"path\": \"third_party/imgui/.github/FUNDING.yml\", \"sha256\": \"d4ed484552d5ee8c4c3d7344b40ab57ec44782c444a3f16eac8a6c958bb034c3\"}, {\"path\": \"third_party/imgui/.github/ISSUE_TEMPLATE/config.yml\", \"sha256\": \"1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb\"}, {\"path\": \"third_party/imgui/.github/ISSUE_TEMPLATE/issue_template.yml\", \"sha256\": \"9aec0e83f9264549f2ecf9879cd6c2f921f9efa5ccefef77afdcbb33f11e3dda\"}, {\"path\": \"third_party/imgui/.github/pull_request_template.md\", \"sha256\": \"d2ec4d443103057c9a2b2cdc74bb6d5dfd32dd2ea7a293a2d21fc7dc7fbb0c9c\"}, {\"path\": \"third_party/imgui/.github/workflows/build.yml\", \"sha256\": \"4cc9bdcca87c877d9d474f60c506a1e353689f1465f2bfd53c30fedab994d776\"}, {\"path\": \"third_party/imgui/.github/workflows/build_windows_vulkan_libs.ps1\", \"sha256\": \"49726d9d3bc9f663e33ce84761588253a55f4f156c3bb79fe681bf1427cc0bb5\"}, {\"path\": \"third_party/imgui/.github/workflows/manual.yml\", \"sha256\": \"c07a2e688da152a4de67dee0e2cead1dd70d9b336db40f5f5ae56da282e01eea\"}, {\"path\": \"third_party/imgui/.github/workflows/scheduled.yml\", \"sha256\": \"7c8fe6635b04cca24d036638d587726e551f4f69b92bc25683e3eeb002b9d1a0\"}, {\"path\": \"third_party/imgui/.github/workflows/static-analysis.yml\", \"sha256\": \"8a944b822707f4aee86e2e735f3b45f6693329ebf2bed33eeb1d35872d89f660\"}, {\"path\": \"third_party/imgui/.gitignore\", \"sha256\": \"f49b0b6a95b4962d541c4d294ff373aaf029a198f38d7f99ac40a4505ccfe263\"}, {\"path\": \"third_party/imgui/LICENSE.txt\", \"sha256\": \"173506a2d6f7fb67990d257fb2507f188690eca39060c39469ae7bef43aae2a3\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_allegro5.cpp\", \"sha256\": \"fa651f0dd5b18e3ab5aec0cf19a140f2a04e3c03286408e22ac1a899f77c0261\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_allegro5.h\", \"sha256\": \"389005b44fd287df9ba38e3be21eb30a2e9ba5bea5945a04b0001c60d59665d3\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_android.cpp\", \"sha256\": \"ce45feb270b41de7acfb1dde2654e8dbb184de87682bb413fbbd715733b531fa\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_android.h\", \"sha256\": \"1d27cc5866a6c2d1849b3819a407e4b0c1b2f6b09cd5077d4292f3f8d300c0ad\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_dx10.cpp\", \"sha256\": \"16dab452b8a681efcf1a4ad2d9c34b28783194f64ef8ee12d9a8031a1cb1335b\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_dx10.h\", \"sha256\": \"34987495be67dbe5e5a1b888778f32bbbc633ada81dcd40dc0046c3af5850ec1\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_dx11.cpp\", \"sha256\": \"bb38a89c20de197dfa8a892c7fc00c2b9aab24b8fd438cba2b557f49ea5ff509\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_dx11.h\", \"sha256\": \"663b3a6a6c6cba415819dd615048f51b03591f9ef4c472e28e3c7fd7f7610f0c\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_dx12.cpp\", \"sha256\": \"edfd8449a9bf9fcd526f076655bb77836c172211b07402777d0fe2630b7c2f5f\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_dx12.h\", \"sha256\": \"93a8064a91b9c567d024f72a14a0dd1aa2afaffbcd9b8edb6cb931595594ecc7\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_dx9.cpp\", \"sha256\": \"ed1745ebff7ad893f15b002d491cd005d368932859f98c20863a65b7caed4180\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_dx9.h\", \"sha256\": \"fbc5eec4e8427b2af0b1e25753ad3e3e22967b64fa2fc9813e032499867af16d\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_glfw.cpp\", \"sha256\": \"2516ba440363612b8c3180e4fab1d744785101ea767ded254ec9d6c8ce6019bd\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_glfw.h\", \"sha256\": \"fc3468f306762247a2d51b751fd5502aac7e488b083d02f85100119112905a45\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_glut.cpp\", \"sha256\": \"7475e0ca8dd8bc191a009f6aa0e17770729a9e12a938b3d39eff16d3795b4271\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_glut.h\", \"sha256\": \"2bcf0a7f6120d9d1aece6e8bf60c0ad7225a44b679be9d03b3e59fbdb4702e5c\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_metal.h\", \"sha256\": \"76dccde7cb59b39e697e0ba850ca27f2df036bf758cd5717274e4264407bbb04\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_metal.mm\", \"sha256\": \"8aba9bfdb2ecf85f7c7c1dd9af980f0f296f51324f65decdcc96d913dd015788\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_null.cpp\", \"sha256\": \"43a91209fa70302174b22c9241c6f95a8edf799bb06536b783d31419de58007e\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_null.h\", \"sha256\": \"49c6bd69de307af5c7ed532ab46c2d42941af3ec667d9afc6f39d481501819cc\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_opengl2.cpp\", \"sha256\": \"d4cc076c2a7cdfb3a320fe046b68141481e1e496be7b6658e1402977985ab76c\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_opengl2.h\", \"sha256\": \"b4dc0226883a0e388e9802c382b410f6cccc3628bf80f67412fc8e59f8c3ae18\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_opengl3.cpp\", \"sha256\": \"c4dcaf989498d1347706665686710cd7550e0ded3a18306c8f1bc10fd9dc0645\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_opengl3.h\", \"sha256\": \"61316c5f27f9993fb543a12db36580f4c4479e611fb36ef10cd76e17b35e2999\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_opengl3_loader.h\", \"sha256\": \"d3aa3e1f3d23c8c88817832e17d8dd0f2d0b599ae28430067c3fad563b8b7cd5\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_osx.h\", \"sha256\": \"3a6e8ac0a6a92d888c12f4ef50a6c3cad430484f6ccaf84ca108f20e0322638d\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_osx.mm\", \"sha256\": \"ce568dc98ca4c50d23c9ae71871baa8232de5d9419376e217fb94d7a31d3b0f7\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdl2.cpp\", \"sha256\": \"504f73ed8c20c0e106cd429497e391729374e456a108e61b65789ee7f1c93837\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdl2.h\", \"sha256\": \"240b4bf61be07c56c6f6694efbd8d5a3d4c4d0735985c9982d771f04d40593cd\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdl3.cpp\", \"sha256\": \"560dc1be7965ccfd275630cd6a052557c8576f86c2b9a5851d7c538331c1e21c\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdl3.h\", \"sha256\": \"a8cbd19af65e19b94c3f447fc2d5de79056cc9c0f646b84baf1054d88692bddf\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdlgpu3.cpp\", \"sha256\": \"f425c38305c778820b1d1205470c7af9449e7567fb6300dd1521badadef4c679\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdlgpu3.h\", \"sha256\": \"9f8eb5e69db4d0a5060950d4f7e0fa2245f72f03306954d76fb97ac35e8ad46f\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdlgpu3_shaders.h\", \"sha256\": \"a9b14825fc3f8b4809d914553130f6a2ea9b45c86db21eb72896edb72611a897\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdlrenderer2.cpp\", \"sha256\": \"73c73f97f54d71d7f612391c5472815f4a24b879e21c8aef259e3f25422d1d3e\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdlrenderer2.h\", \"sha256\": \"a551391616f8613d3b2d2c75c9bda8084d6c79a558912465a25eb8d6fbc91fc2\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdlrenderer3.cpp\", \"sha256\": \"7bc9081baee849ed5eb0ec145b0c980564083071c6d984cf1f69692820f27dc4\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_sdlrenderer3.h\", \"sha256\": \"af1b30445a73b6384e778c113eb61e5c00daad06a37a121a3241a8fc6acff69d\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_vulkan.cpp\", \"sha256\": \"462394a0b34ef85fa797db9e79dd07f79244cb5d59222d4a96df2ac88ffb3e50\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_vulkan.h\", \"sha256\": \"068355a6ad72776acbcd4f89fb7c26659e0c1f2db131e0fc978cd4dbd51e0154\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_wgpu.cpp\", \"sha256\": \"09b3fb834c9b031550175ad7d7bbac4bb31df6d96c94e6966047c3cc9d31d38a\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_wgpu.h\", \"sha256\": \"0a3516f5a9c3ee2a75e332e739d43b1ad5f59632f9a6de1a7283a2b78300a3e2\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_win32.cpp\", \"sha256\": \"f81c667180b06516da8060ed7a7cc63d632dfd5a8c0120d8337c606c7c13ec7b\"}, {\"path\": \"third_party/imgui/backends/imgui_impl_win32.h\", \"sha256\": \"2736595b8de1e56871661d5d9b96deec567d35521746fbe2ade8f0543acdfd2b\"}, {\"path\": \"third_party/imgui/backends/sdlgpu3/build_instructions.txt\", \"sha256\": \"ed6131530084239ade39689052c256fd27f739897c531de729f70364417ce11b\"}, {\"path\": \"third_party/imgui/backends/sdlgpu3/shader.frag\", \"sha256\": \"91cdf78e2f35e64aa72d866a1a228aec9173f40672424055379d2b91b60c74e5\"}, {\"path\": \"third_party/imgui/backends/sdlgpu3/shader.vert\", \"sha256\": \"64358037040bc5779467c860701556da811b6482c6f3af9b0832d2a57592d57d\"}, {\"path\": \"third_party/imgui/backends/vulkan/build_instructions.txt\", \"sha256\": \"22897601ebd9296a28ac317b675952c4275b62a5f5e2b3cac587cab0ac731156\"}, {\"path\": \"third_party/imgui/backends/vulkan/generate_spv.sh\", \"sha256\": \"c3abb9fe51a4c033003ddabfd97c79583c89675572225b2d7b615619b58ee798\"}, {\"path\": \"third_party/imgui/backends/vulkan/glsl_shader.frag\", \"sha256\": \"77ae928b0eb30858ba2ea90f896c1c505d74dbdcd223df87e628898c28038836\"}, {\"path\": \"third_party/imgui/backends/vulkan/glsl_shader.vert\", \"sha256\": \"50809004520a548046a5d139213a577a092fadea8761d5f4089f21df70c68a87\"}, {\"path\": \"third_party/imgui/docs/BACKENDS.md\", \"sha256\": \"a84e90a353d5a6ca85c93b27ae1204e296062bf1c6a4646b7459267535e30084\"}, {\"path\": \"third_party/imgui/docs/CHANGELOG.txt\", \"sha256\": \"18ac63e4b96e84a677b9a2eda858efccff103ec219f771e79b46b37d05d83cd3\"}, {\"path\": \"third_party/imgui/docs/CONTRIBUTING.md\", \"sha256\": \"bd395cd5ef7258c4ba8d98dffcebe747625b4ee5c5bf72d29a7aade0be400708\"}, {\"path\": \"third_party/imgui/docs/EXAMPLES.md\", \"sha256\": \"57353b2247aa0ddaf7aa700c44f6d8d46955a720a7110816f1d429764f56dee9\"}, {\"path\": \"third_party/imgui/docs/FAQ.md\", \"sha256\": \"18cc481de1f19cd1cfaf0559dcce618ee6d5bf39f2ba88063bef8fc9a633b720\"}, {\"path\": \"third_party/imgui/docs/FONTS.md\", \"sha256\": \"f3cd3dff475354ea7cc54496ff155b1ffa4a20af2eb84bee27c0541398fb0ba5\"}, {\"path\": \"third_party/imgui/docs/README.md\", \"sha256\": \"26e68e153b3acd920d2ab18f44f06a4455861518593d5b4f3c87d7fbe6d40844\"}, {\"path\": \"third_party/imgui/docs/TODO.txt\", \"sha256\": \"6e6401da9588afd028b7399681f64380f9e1507b20c6d6e1722a810e8fd51b44\"}, {\"path\": \"third_party/imgui/examples/README.txt\", \"sha256\": \"a6cd5444ec5a867fbbfc3304c886b40ce64c455ea83bf608a2a2543d86082ca6\"}, {\"path\": \"third_party/imgui/examples/example_allegro5/README.md\", \"sha256\": \"0039634ab33e93c88439887479ca6da3d730a72229b6d05c1b0c2bcc46655a77\"}, {\"path\": \"third_party/imgui/examples/example_allegro5/example_allegro5.vcxproj\", \"sha256\": \"5ea8ef0d62638403b84433269d913e0ed1831ca7b0a0d0bdc089c7e61fd7aff2\"}, {\"path\": \"third_party/imgui/examples/example_allegro5/example_allegro5.vcxproj.filters\", \"sha256\": \"9ec6d6cca72b4b6d62f44702df11b891e6907bf6de8954426ad49722a1c2baff\"}, {\"path\": \"third_party/imgui/examples/example_allegro5/imconfig_allegro5.h\", \"sha256\": \"0c3bf7813a06eaf40c89653c66a322826eeab17032677c5f6e1fb7e52792f335\"}, {\"path\": \"third_party/imgui/examples/example_allegro5/main.cpp\", \"sha256\": \"5054f999e53159c872b5713564cec60c12126a8c880b8bd1fcd7f0bab20e38e2\"}, {\"path\": \"third_party/imgui/examples/example_android_opengl3/CMakeLists.txt\", \"sha256\": \"d59fb499e2b450bdf7c62639c53df46d6c1dcef314b6c025e6751aa04948c53c\"}, {\"path\": \"third_party/imgui/examples/example_android_opengl3/android/.gitignore\", \"sha256\": \"807772a5584dd6da8ca45052191106948b181b5a25c241edcbd58ebc551a8b41\"}, {\"path\": \"third_party/imgui/examples/example_android_opengl3/android/app/build.gradle\", \"sha256\": \"2764e357caa70f531dc0ba336029a5f39b7293d384bbf032dec39489c5bc5571\"}, {\"path\": \"third_party/imgui/examples/example_android_opengl3/android/app/src/main/AndroidManifest.xml\", \"sha256\": \"21dce1f55642df1035983fad0bf559d47f97ff8282d43843628f8bcb7f5a3fee\"}, {\"path\": \"third_party/imgui/examples/example_android_opengl3/android/app/src/main/java/MainActivity.kt\", \"sha256\": \"153eb040f0f61c1c09f18b939d916a8f2e1896ec60955091fb540e63434aec30\"}, {\"path\": \"third_party/imgui/examples/example_android_opengl3/android/build.gradle\", \"sha256\": \"47774018405adb4336f34aa05a2fdc6ca8c2175e5efc5b705f1ecb101eae7094\"}, {\"path\": \"third_party/imgui/examples/example_android_opengl3/android/settings.gradle\", \"sha256\": \"e0683c38ef354f878bd5c92b2d2dc4a5db5f952667d3f538e2f32be0a6dd9795\"}, {\"path\": \"third_party/imgui/examples/example_android_opengl3/main.cpp\", \"sha256\": \"c40384205709cbcf49889a9807b6dbd6a89d4215a733113dc6427bf77a33ee50\"}, {\"path\": \"third_party/imgui/examples/example_apple_metal/Makefile\", \"sha256\": \"00f9526eda8862293d6cd81e129fa7cc13bd3e8fd93bc70ba63ca343af8540ec\"}, {\"path\": \"third_party/imgui/examples/example_apple_metal/README.md\", \"sha256\": \"3c15a1612c07141055ceab584b732e55f9880527de22bd2c9cc93448852a1ab0\"}, {\"path\": \"third_party/imgui/examples/example_apple_metal/example_apple_metal.xcodeproj/project.pbxproj\", \"sha256\": \"26e5ebcd5e5b10eedb119cc0e644939b197883b353e3171c872b0a50d608c7a4\"}, {\"path\": \"third_party/imgui/examples/example_apple_metal/iOS/Info-iOS.plist\", \"sha256\": \"f1d7e2cb10ef6b10c3cf31ff705867dfa20969882b338865b055870b69238820\"}, {\"path\": \"third_party/imgui/examples/example_apple_metal/iOS/LaunchScreen.storyboard\", \"sha256\": \"108f181eedc6c4f03d1b3b53c1e6ce5c737663b4c33f63380a2557f1a6fcd51e\"}, {\"path\": \"third_party/imgui/examples/example_apple_metal/macOS/Info-macOS.plist\", \"sha256\": \"97102296b109ad28aa43b6c27a15a1ef4cbe1ff03452655e8b206f08113d1f81\"}, {\"path\": \"third_party/imgui/examples/example_apple_metal/macOS/MainMenu.storyboard\", \"sha256\": \"790070eb4c5fce0b3e3a6b410f73c83c96f440b5df0906c3570bd760eb68ee28\"}, {\"path\": \"third_party/imgui/examples/example_apple_metal/main.mm\", \"sha256\": \"d0b2c05b0cf3ce625d3c36821bd2504b296d180c4fc56fa1fe7a67a4d26e8100\"}, {\"path\": \"third_party/imgui/examples/example_apple_opengl2/Makefile\", \"sha256\": \"dd7a1f2f2c1b3415fe48ef342dc9ab60bae6a1edb50ea73c20e48eb640b8f1c9\"}, {\"path\": \"third_party/imgui/examples/example_apple_opengl2/example_apple_opengl2.xcodeproj/project.pbxproj\", \"sha256\": \"71e40d1218e4de496843d9b1fc357a36a63d1c17b4ab44720a58298a44b1bc4d\"}, {\"path\": \"third_party/imgui/examples/example_apple_opengl2/main.mm\", \"sha256\": \"aaa686d58a72a1bcf4794f05a2d81f953c269328f0e1a7ed1123ac455852f050\"}, {\"path\": \"third_party/imgui/examples/example_glfw_metal/Makefile\", \"sha256\": \"387b7385b278528e48f7fc04727403f2f3a12c596b7e91aae477a4e958e8de96\"}, {\"path\": \"third_party/imgui/examples/example_glfw_metal/main.mm\", \"sha256\": \"531f4f7c735a5cb59582603353fcefdfa3d25a7f33510e2ea447691b3bd31436\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl2/Makefile\", \"sha256\": \"5c007c48db20eb0f237e8726f0456edb53138f92030b2bef1f2a9615a095ae60\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl2/build_win32.bat\", \"sha256\": \"dddb6ab5b698cb60b1c1a1fde353c7fb2aa6b572f1286daa5b6378f8bde4f015\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl2/example_glfw_opengl2.vcxproj\", \"sha256\": \"bc9e25976ef3d734fde96cf9fe6b96487506b839769f0f3dd6ffcf92ebd0e4a4\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl2/example_glfw_opengl2.vcxproj.filters\", \"sha256\": \"639b29a14a970362c3c8712a2f426d994079c4669f385324c7e6ac4bd4b16a8f\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl2/main.cpp\", \"sha256\": \"2e24f6737743bca46ad0d313dd756dda883ff27f295ae174debdf95ce5abe3df\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl3/Makefile\", \"sha256\": \"3f9e8d5171627e61635436369bde6707b21d357e96ca25a452e41a7c5c36a542\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl3/Makefile.emscripten\", \"sha256\": \"2d2a3a47df869a41452c775996864d5d0e9c08ac80db7b79d4cad2430c39466d\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl3/build_win32.bat\", \"sha256\": \"ad90a2905a5da3a2713383c25ae3746ea87ffbc30cef508a6d13631997dff69c\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl3/example_glfw_opengl3.vcxproj\", \"sha256\": \"e605c90e1afdbc9dc8f6c7b872be5f6669c6cc1ee08218b206ffbed2864ae6a3\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl3/example_glfw_opengl3.vcxproj.filters\", \"sha256\": \"ee7457e4d07d0987e698cd64bde5c068ca1ee87520dce24b7d35481c61b351df\"}, {\"path\": \"third_party/imgui/examples/example_glfw_opengl3/main.cpp\", \"sha256\": \"29e44c8aa0dea3f9e56ebee9ffe348c33cd99287d36124c56ed1540423b99c48\"}, {\"path\": \"third_party/imgui/examples/example_glfw_vulkan/CMakeLists.txt\", \"sha256\": \"b00ed37a7a9ec623bfb509b54a9d129dafcfb1590fadec74884648c4683c8b3c\"}, {\"path\": \"third_party/imgui/examples/example_glfw_vulkan/Makefile\", \"sha256\": \"e9c4e6e73d49324d2ccf780238227cec05b7f1e6167c2a92f95828dead406f17\"}, {\"path\": \"third_party/imgui/examples/example_glfw_vulkan/build_win32.bat\", \"sha256\": \"8748f5d312d6f6df3275320c4c74716aa8bec113aef17235a06ba0e50b1b9982\"}, {\"path\": \"third_party/imgui/examples/example_glfw_vulkan/build_win64.bat\", \"sha256\": \"a792df8bb14f9996f50d711a4e7e678543c1c81aaf7c7803ab4d92d6e3a69366\"}, {\"path\": \"third_party/imgui/examples/example_glfw_vulkan/example_glfw_vulkan.vcxproj\", \"sha256\": \"61101557877ac457c44ef7ff15ff161394bc8eecd4a510dcef1bfbfde3d3ecaf\"}, {\"path\": \"third_party/imgui/examples/example_glfw_vulkan/example_glfw_vulkan.vcxproj.filters\", \"sha256\": \"ad7733a4bf9bc0d28e512f27481bdcf35357669bec26bba6994e0f54dd3234d1\"}, {\"path\": \"third_party/imgui/examples/example_glfw_vulkan/main.cpp\", \"sha256\": \"e289397be3e494a7e970ff9b6a303366e03e0207f967d4f5e832c7165636f9f3\"}, {\"path\": \"third_party/imgui/examples/example_glfw_wgpu/CMakeLists.txt\", \"sha256\": \"8b214b82bddd78ab9e4873dca1b99d6f893e8fe9b7231b31ec990ab91a64e34a\"}, {\"path\": \"third_party/imgui/examples/example_glfw_wgpu/Makefile.emscripten\", \"sha256\": \"dc701ba500581bfa2efe6ce1c5aeffdbe5d0bb23a04338dcce68c470b7274ac9\"}, {\"path\": \"third_party/imgui/examples/example_glfw_wgpu/README.md\", \"sha256\": \"fb2c6f110b4b07f4bd5c2b49b9fa55b49deb672a0bd6e6f65589cbb7148bbba2\"}, {\"path\": \"third_party/imgui/examples/example_glfw_wgpu/main.cpp\", \"sha256\": \"8527779d4cd8685e6f62094dcc01c94c5016baf6b705b87500c5c027112becb2\"}, {\"path\": \"third_party/imgui/examples/example_glut_opengl2/Makefile\", \"sha256\": \"bd30313c292667a24c5d333c72c714c043106c51c7159b66512bbcc20edee6c4\"}, {\"path\": \"third_party/imgui/examples/example_glut_opengl2/example_glut_opengl2.vcxproj\", \"sha256\": \"ae1405412755d388ef6e27fee573701f44530bfd135a79db00e7662aca0f0385\"}, {\"path\": \"third_party/imgui/examples/example_glut_opengl2/example_glut_opengl2.vcxproj.filters\", \"sha256\": \"1d0090d57a055dd456a5aabab24b89882c2e9ac9fcf3c889416a2d0de6e10452\"}, {\"path\": \"third_party/imgui/examples/example_glut_opengl2/main.cpp\", \"sha256\": \"06f7c35716d55360c50303644762ff4bffb04208580e120501c32021a4c01c4d\"}, {\"path\": \"third_party/imgui/examples/example_null/Makefile\", \"sha256\": \"3300943a9d2cf4cc9636da83f03feae00e4ccd29445976e1cc8c32d1d18fe577\"}, {\"path\": \"third_party/imgui/examples/example_null/build_win32.bat\", \"sha256\": \"12722237a9a714b61da6e0966ad2cf4a26eb590a46fcbd102e0eb28a2f306c7a\"}, {\"path\": \"third_party/imgui/examples/example_null/example_null.vcxproj\", \"sha256\": \"4868bf94d65b433ec7f10c7cb7d924e34ec19d64b32fd73eacbaa7897dad6b19\"}, {\"path\": \"third_party/imgui/examples/example_null/example_null.vcxproj.filters\", \"sha256\": \"94d4d2cfb7d7658732b2363d3b11cab772bfcea8abba740e18732f4df38b3aa5\"}, {\"path\": \"third_party/imgui/examples/example_null/main.cpp\", \"sha256\": \"46861249e7a190f3e803aa8061c0e825fea1aae8baed907ebaddc1ed5da58bcb\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_directx11/build_win32.bat\", \"sha256\": \"68d7fd9c058ba3712e5520c7c1fbcdfd17d5da30d41742f8fbeac309538af468\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_directx11/example_sdl2_directx11.vcxproj\", \"sha256\": \"b43980df963f1870aba255d009e7b0aedef2a8bc99ac4fde2f28c2f710400439\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_directx11/example_sdl2_directx11.vcxproj.filters\", \"sha256\": \"27efb9479a6df3847577fb9772b17deb7d45f7587ec0a70abf3ea896d501bf07\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_directx11/main.cpp\", \"sha256\": \"c5fbdcfc891486d598f21a2b18630910008c3b40120be6b7a1820cf7bc688b84\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_metal/Makefile\", \"sha256\": \"aec1ac5e25ed423d9d25d5711be7114bb9a8cc2e5e62c641a4c0eaf579935856\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_metal/main.mm\", \"sha256\": \"82aa6c8eda9f0545c390cedbcf9762030ec3340a989e126f51984c47e2b26365\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl2/Makefile\", \"sha256\": \"7112397f365b176ee6c9993b2bf617174bfaf850a741dfa4aafe2e629ae7cf61\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl2/README.md\", \"sha256\": \"32e40535989090c89a85eb0fa455e85ef24b5411a18fff435d716e97c756c000\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl2/build_win32.bat\", \"sha256\": \"241a0d303a9dd5260906223ee63b9a4b723c4cd3e17500188b4d060a1648e69f\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl2/example_sdl2_opengl2.vcxproj\", \"sha256\": \"19844af2fb5fc6bb8597cb27dde17edcba1bab1fe7f46b6342aeba2476b276b0\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl2/example_sdl2_opengl2.vcxproj.filters\", \"sha256\": \"6792c6cd4cbcdf3039c252eea854cd3702f89a43544d8d19e211572ec8791f66\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl2/main.cpp\", \"sha256\": \"b3db3d8c2cc11806f29da4ecae3b71357211b3e5bf3f202ea56d5a2778b59669\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl3/Makefile\", \"sha256\": \"f8306c387dd6b0248986f0f7fe1ebd20e2cd6ae796b6085c88971d5ef75359ee\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl3/Makefile.emscripten\", \"sha256\": \"39dc9235e1a5b28fb2540bb4b73a1c78c0c7fcd1ac9fb1ee897d7a2ba383589a\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl3/README.md\", \"sha256\": \"1d8f78f864173a1ff94d8a90304e9ba1f4f41f888883e020a46f8238dd7268b5\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl3/build_win32.bat\", \"sha256\": \"83676ce67ded3b27eca4c055c6d6189cea3600bee522eb94ecbdbc0df653c9c9\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl3/example_sdl2_opengl3.vcxproj\", \"sha256\": \"6513c865634117fed2ac6fbde079874d9f3627665c4842bfae45e245d11e3ea1\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl3/example_sdl2_opengl3.vcxproj.filters\", \"sha256\": \"9c047fd525b6cb3a2a68a0ffbab9ce85fb6d35dda8f07c10ed7e91b15fb9fdb8\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_opengl3/main.cpp\", \"sha256\": \"8bda4428a154edd923b045d705e86fc73832ff4b0ce34b93a93982f77aa5250f\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_sdlrenderer2/Makefile\", \"sha256\": \"fda4ab50e7aecef013532425c2fc74bc6c708869dba25d905fc4e786e4f5b702\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_sdlrenderer2/README.md\", \"sha256\": \"9410869e4d7e14af0e6ebdbfedbe42a41cb2f3944e2260ee7cf4a09488308e3c\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_sdlrenderer2/build_win32.bat\", \"sha256\": \"54608712fa43ad7bea8c9d69dfd9c57838fd552ff68fe0be29acd4816c0431c0\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_sdlrenderer2/example_sdl2_sdlrenderer2.vcxproj\", \"sha256\": \"d6d8a82c45b402d8045c64e97b02d97b623596386f2add63b5e414a61dc33541\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_sdlrenderer2/example_sdl2_sdlrenderer2.vcxproj.filters\", \"sha256\": \"243f3b7edfffdc33243117af90a07c50f0558e00d6ce13450042f418b819dd25\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_sdlrenderer2/main.cpp\", \"sha256\": \"da86cc1bb7862e49aa0099d27585f89d9d1fa2a96047a2cf375a126eb77291e6\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_vulkan/Makefile\", \"sha256\": \"82d5d318997decdd161f362d78e2b4f1f829d914c3cc5be02564e77dd95542e8\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_vulkan/build_win32.bat\", \"sha256\": \"7d5d0349d3796557dc66b69de02ea656245754c9b7039fac5c9fb253dcc13e02\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_vulkan/build_win64.bat\", \"sha256\": \"bd8055be68f10ce98587089d54b5b5901f9ef30dda412750d71e42d7bbff30e2\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_vulkan/example_sdl2_vulkan.vcxproj\", \"sha256\": \"0014810e6b45b8dd3d42f534fe3e91df36cb9f312262467951ecc19754a29f45\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_vulkan/example_sdl2_vulkan.vcxproj.filters\", \"sha256\": \"508aefac1465cf60e05a1757e3db89351af4023882d21d59b7c91782c21cc90e\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_vulkan/main.cpp\", \"sha256\": \"e7fa6aeae980bfabc868a40d9aae7c01d5c9aed8e4461dca2281e839bd68bd64\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_wgpu/CMakeLists.txt\", \"sha256\": \"c6c889d45cdba6320493f9411f206ae9f1316226abae409292caf03497f595df\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_wgpu/Makefile.emscripten\", \"sha256\": \"5f7278a87495067658bfd0e76e6cd2cc3b240a9ff45f2a27e15a114de7b93f06\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_wgpu/README.md\", \"sha256\": \"810bc33f4cb3e4c74c7c1f5909cd2c95aed5476dd04103c2df4bea0e6c6de821\"}, {\"path\": \"third_party/imgui/examples/example_sdl2_wgpu/main.cpp\", \"sha256\": \"a5bd4fd87226cabf1e6c4c75522c135f2d45fbdce95903a228d3e393f63c7b58\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_directx11/build_win32.bat\", \"sha256\": \"1dc483fb5b21bdd5b13735ac7d289023f6e579ce5d441529e19194e6018141a1\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_directx11/example_sdl3_directx11.vcxproj\", \"sha256\": \"dc6e4424de4395619281cfdf4421f447f67de3ca47db0f1da0d4c3435cf3ac82\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_directx11/example_sdl3_directx11.vcxproj.filters\", \"sha256\": \"de8af995c502469030c6d5d8aff94fac93a866394fa860866e4c2f148fd8f2a9\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_directx11/main.cpp\", \"sha256\": \"d4a3eb50c0091ef6d397801b85c177afe41b567eb033d9efb339305a4543ecdd\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_metal/Makefile\", \"sha256\": \"a57cc456cbb39d32aecf42898956d3ea93e89eaf5ab6fc939380b12594271817\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_metal/main.mm\", \"sha256\": \"87343d8a9eb5f05081431bd0a0f09e6cbdfe3cb43ea15fd848ad3337fdbe4bc8\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/Makefile\", \"sha256\": \"173d61d5846fe06e1fbf445ab3b4eca7406edab2100e2b3441b3b78a2adb7c98\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/Makefile.emscripten\", \"sha256\": \"6f896eea71137111fea9337ad952cc3ca3691369175e25bd6070e961e4eb0105\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/README.md\", \"sha256\": \"deae9d977da04a1c9dac407e7c2da399584bc877cace51697ddbe4131c3c2f79\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/build_win32.bat\", \"sha256\": \"677413c0a8699910311285165e8a83831b5d7c80880af8c4755c03c7289ac6ae\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/build_win64.bat\", \"sha256\": \"529723f56f41fcb8fd80e26f0476681733dd2f48dd47766f43fd97a4991c10b7\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/example_sdl3_opengl3.vcxproj\", \"sha256\": \"bdceabb2de44e0b6e68fbfa4d6b560a2e258810a8c12015dc5a35b77416955ab\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/example_sdl3_opengl3.vcxproj.filters\", \"sha256\": \"8b33ac99b23017087e54e31c4f896ac72f8f315e1092a0c66c3124aadbb7bc29\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_opengl3/main.cpp\", \"sha256\": \"620b5fe1aa6a18970ad4181a03c5e724f261f66aeda9e06b31845e692f0c8bb7\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlgpu3/Makefile\", \"sha256\": \"70e1670fbad9c45c4470c2f9c31cf8db51d010d39c1d1d1339ef4d94dce31b7c\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlgpu3/build_win64.bat\", \"sha256\": \"2c4080779f885758db8828edb51b658f7e669dec8ef99bae8257ac10eea69c78\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlgpu3/example_sdl3_sdlgpu3.vcxproj\", \"sha256\": \"ccc989f4fbaee7018ae254eddc07f0fc6c333f784b9b8af09d12b7c22d6baf77\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlgpu3/example_sdl3_sdlgpu3.vcxproj.filters\", \"sha256\": \"ee75d65930a34372c031ecd7f204d4205d87a9df2f31d91458732d54c658e719\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlgpu3/main.cpp\", \"sha256\": \"34f23d7555ebd422fb5268a152d25643a4e773e651fb8322155f63ac5542fafc\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlrenderer3/Makefile\", \"sha256\": \"2cac71c9c4bdc025cb3abd76ce231d85db2b4a7ac88cb152e5d3aaf8db5fbbee\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlrenderer3/build_win32.bat\", \"sha256\": \"f94076362e1ae3a99e631ce3546817d61e27665cbe0a94886faac7227cea4c13\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlrenderer3/example_sdl3_sdlrenderer3.vcxproj\", \"sha256\": \"34341983984e8eb084e81942167620150f6bf71632405e80e45c9a94c4aa76e3\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlrenderer3/example_sdl3_sdlrenderer3.vcxproj.filters\", \"sha256\": \"e38b32cb0d1f0c50e79ac286be86537c06d14a3a45b1faeb6ae0a5115ebebe6d\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_sdlrenderer3/main.cpp\", \"sha256\": \"6d381368842dd2e72a24a6332eb7e2d231a988775d7bd3b5f92f2319588bb3b0\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_vulkan/Makefile\", \"sha256\": \"a55f2602c7506cf944dbd1c12594af6abb0447a438a4d5fb05feba32edbc6f27\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_vulkan/build_win32.bat\", \"sha256\": \"9ba81ed3652f7d29dc32df756bcd955b146a2e29ccb97f22fa2c62c85544debc\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_vulkan/build_win64.bat\", \"sha256\": \"a6e6f2b47b32504a4cd2077fb26bc821ecd3348c787fcbd34906497fb4d53051\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_vulkan/example_sdl3_vulkan.vcxproj\", \"sha256\": \"964e0afadf44cb60de3d7ebcfc6446cffcb0b089681b42449ec6c462710733c9\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_vulkan/example_sdl3_vulkan.vcxproj.filters\", \"sha256\": \"0f5f973d8f5f30be90e6d9dfac1a50da4a7011fc4a6f172e99b3fde258b7029b\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_vulkan/main.cpp\", \"sha256\": \"b05a92caa6f578490f5f3172572b5086b0c4ccdcb4e03517e4983a167b9fd7ec\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_wgpu/CMakeLists.txt\", \"sha256\": \"3aeedef012c322370cdc6cb805aa66c15a767acdebf598b5ac26e85d523a4486\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_wgpu/Makefile.emscripten\", \"sha256\": \"fc73b57b69a6df7c199d621f7cee8c227122558ed0a8778f583b730b93f0f14c\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_wgpu/README.md\", \"sha256\": \"b5fb6d9452b64bc365404c1ef834244e57fd4e098fa910a14259bda02aa7a4f7\"}, {\"path\": \"third_party/imgui/examples/example_sdl3_wgpu/main.cpp\", \"sha256\": \"c73447d865f031035293d683426a709e2404668730f8de363efe34b8c2635bea\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx10/build_win32.bat\", \"sha256\": \"3e4e70b23bfb3a570a358ed11c6015d1f5e73fb960ce3d95811ffa7fb92986e8\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx10/example_win32_directx10.vcxproj\", \"sha256\": \"b4c116afd8e223a7a83e4ecfc882578209a945c765ff2915f444ab32e097b7b1\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx10/example_win32_directx10.vcxproj.filters\", \"sha256\": \"52b38e7c5e937edbd88628f594d9f9c8b37ad4a9c10fc91846ea0c39980d8283\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx10/main.cpp\", \"sha256\": \"c0309cfc9d3d5cedbfcb65d1a47f0e3a7206249b4300d83fa9529f4e5d006d0e\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx11/build_win32.bat\", \"sha256\": \"e51ec8807f532ecc2e40b6309942304e9946fb12caf6788c69824fe6b44b90f3\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx11/example_win32_directx11.vcxproj\", \"sha256\": \"32454ff11fee784e0c8bbcee2965c55ac4d43ed916e3b77108942ccdad4f8321\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx11/example_win32_directx11.vcxproj.filters\", \"sha256\": \"8dfd447af17f928008a14e0a94d75756960e6b00fb7b7e5dd26cac183445d3ba\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx11/main.cpp\", \"sha256\": \"fc63264894119ce98ad1bed197fe8ecedcaa4f2663101c3c7b38ae1784b49ffe\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx12/build_win32.bat\", \"sha256\": \"7cd508efa5b7e3576e9f1b591fb36fb251636fc5e32e2355f6578a2180824979\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx12/example_win32_directx12.vcxproj\", \"sha256\": \"45cd055b71672f9451f0835b2809b884199b8727917eac821681081cb7108604\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx12/example_win32_directx12.vcxproj.filters\", \"sha256\": \"f440eb3905f36f2e4597088e8af952c37056fa58dc70943fb50dc1e7ff947d4c\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx12/main.cpp\", \"sha256\": \"4992a7ba1f1cb565c2b01ec660342e443d1890932d82770a8779bb377d0dfe0c\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx9/build_win32.bat\", \"sha256\": \"82fa2a3c252e19db1015487e6e04b3aa91f2c7e128ca8c8a82f298ea4a55897d\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx9/example_win32_directx9.vcxproj\", \"sha256\": \"ef0f4f1c90b12e9d977ec540bcd10e405fb6292efd9e14af15cf226e2f0c8679\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx9/example_win32_directx9.vcxproj.filters\", \"sha256\": \"1e215b9cc90bf41247f1729b6bafb572063cb1eb5d704dab69544f4f3559264a\"}, {\"path\": \"third_party/imgui/examples/example_win32_directx9/main.cpp\", \"sha256\": \"1090d2a0859c50fcab7a9ad7fee30701daa1a2da7d68bb28c5db912815291061\"}, {\"path\": \"third_party/imgui/examples/example_win32_opengl3/build_mingw.bat\", \"sha256\": \"41fc33422bedf4e84896d199b9312d977d989240a37d6e7469a6152e4eecafb8\"}, {\"path\": \"third_party/imgui/examples/example_win32_opengl3/build_win32.bat\", \"sha256\": \"602ed6c5e6a0bf61d63958cae108ad6c253042d0a64be219a93739bab79c33b9\"}, {\"path\": \"third_party/imgui/examples/example_win32_opengl3/example_win32_opengl3.vcxproj\", \"sha256\": \"c22af909314f2252ad3d9dd3602ab75ec7ccb591bbf307a138454b5d4adeb7e1\"}, {\"path\": \"third_party/imgui/examples/example_win32_opengl3/example_win32_opengl3.vcxproj.filters\", \"sha256\": \"d5c06bd3e5992473328b80a368101ff35af5b35a24db152fb8553d9d77ee197b\"}, {\"path\": \"third_party/imgui/examples/example_win32_opengl3/main.cpp\", \"sha256\": \"b9be1c61bb001511e37b1a662c73a4c983977ce86364833003b0030fcde4d0f4\"}, {\"path\": \"third_party/imgui/examples/example_win32_vulkan/build_win32.bat\", \"sha256\": \"f375711bc7423bf0b2aa0148df6b6e47276c135aab2b8f68eaa9691cb8979a77\"}, {\"path\": \"third_party/imgui/examples/example_win32_vulkan/build_win64.bat\", \"sha256\": \"192f43731e3636164fd5fed41a36cef177cab3e9dff836965630766e5d229044\"}, {\"path\": \"third_party/imgui/examples/example_win32_vulkan/example_win32_vulkan.vcxproj\", \"sha256\": \"d523d95fe861a2361ce8601ab62c37b84ed70f24bce387ecf9ade001dca6af31\"}, {\"path\": \"third_party/imgui/examples/example_win32_vulkan/example_win32_vulkan.vcxproj.filters\", \"sha256\": \"3ade4f8904b4c789ce2cd3af177b67f020ed330a8dd3efa8223922439e9ace68\"}, {\"path\": \"third_party/imgui/examples/example_win32_vulkan/main.cpp\", \"sha256\": \"bb5b0e96e77c32953d0d3c8c2ec651abf7c372058ad0f55c33a4b901fd5fc04b\"}, {\"path\": \"third_party/imgui/examples/imgui_examples.sln\", \"sha256\": \"55d53b2e930e9d06f9d284880cc98168b5a9d7c1985fb77e7b1ebad6f7014670\"}, {\"path\": \"third_party/imgui/examples/libs/emscripten/emscripten_mainloop_stub.h\", \"sha256\": \"b7bcf8f41fe4535396aa88e6cc4cc2b904a3fd469f2f8f3cfde5224024e93114\"}, {\"path\": \"third_party/imgui/examples/libs/emscripten/shell_minimal.html\", \"sha256\": \"335ca4947ffdf270a47fa2ed6d8618715b1aeb6850065e115337611c555351eb\"}, {\"path\": \"third_party/imgui/examples/libs/glfw/COPYING.txt\", \"sha256\": \"da2fb2c802537710cdebe8881b55356d07b88a6dbd7e4b912ac3091f8e6b5f6a\"}, {\"path\": \"third_party/imgui/examples/libs/glfw/include/GLFW/glfw3.h\", \"sha256\": \"cccbda83db22f05a1b8a4d305b5da52499ea5b1a557516d55ecbcb33f70e96f3\"}, {\"path\": \"third_party/imgui/examples/libs/glfw/include/GLFW/glfw3native.h\", \"sha256\": \"a25d3a5a1e0d2af35b5a3cdc5cd75bb3314f01fe1366020d47ab666685932bed\"}, {\"path\": \"third_party/imgui/examples/libs/usynergy/README.txt\", \"sha256\": \"98740c2d17218ed0e567e2b54d9342957544217c3a8e6f610b6247cd938d8904\"}, {\"path\": \"third_party/imgui/examples/libs/usynergy/uSynergy.c\", \"sha256\": \"920599393e47b11f040e98dc64efd3c06421fbdc917e5aa706ab50788a97143e\"}, {\"path\": \"third_party/imgui/examples/libs/usynergy/uSynergy.h\", \"sha256\": \"87b71587a365edd5d9a2a0182da16769f454d163f21d46c5ef4c1babe2df8792\"}, {\"path\": \"third_party/imgui/imconfig.h\", \"sha256\": \"0b880a6ca2fc2b5fd3487adb5f92aed8b147bdcc052fb926589ef45392963eed\"}, {\"path\": \"third_party/imgui/imgui.cpp\", \"sha256\": \"10c3039cd8856760ed9eb19c7edff55019d26151dc7f135d5407d465f363e6be\"}, {\"path\": \"third_party/imgui/imgui.h\", \"sha256\": \"3afe47233372b7d6e02633cf6a42506bfa6c7fc9e2db054577a669b62af072e1\"}, {\"path\": \"third_party/imgui/imgui_demo.cpp\", \"sha256\": \"5a2543a8a9077330c9e6acf8fee45a4fd8b4e5adae41c35b41b205a63e1559bc\"}, {\"path\": \"third_party/imgui/imgui_draw.cpp\", \"sha256\": \"56888a362c4074687cba8a2d4b80adef8dedbc5efbcc88dfaffcb56c6eb186f6\"}, {\"path\": \"third_party/imgui/imgui_internal.h\", \"sha256\": \"22c6fe9ba420bdfdb09c928148492fee194e159b13e472f1dcd211fa7c3e2201\"}, {\"path\": \"third_party/imgui/imgui_tables.cpp\", \"sha256\": \"502f9beb872a39ee5c14aeb84f5e9998c19f3f067bd160d53b6e4a33581bbcfc\"}, {\"path\": \"third_party/imgui/imgui_widgets.cpp\", \"sha256\": \"bfac961ee9abe0730a10f124cabe253090ba792a5ace9b47fd40414627341b5c\"}, {\"path\": \"third_party/imgui/imstb_rectpack.h\", \"sha256\": \"2efa3d5f7d003c19743b15155dad9f46d9f9fc783a18893d703b431d3c990972\"}, {\"path\": \"third_party/imgui/imstb_textedit.h\", \"sha256\": \"a985f5fa0ed97353d493b497961e9eef52082edcd045cf6954b69990ec9d0741\"}, {\"path\": \"third_party/imgui/imstb_truetype.h\", \"sha256\": \"88f0a25e27f5eefd6ec50c42fc5fe3026aa8170603efa08aa18d622db8660923\"}, {\"path\": \"third_party/imgui/misc/README.txt\", \"sha256\": \"e66b6f13d11ebb9e02e075ba8d6e4ba3f63e3ab6634579c4e2b87e6994b202f3\"}, {\"path\": \"third_party/imgui/misc/cpp/README.txt\", \"sha256\": \"76b3fcaa05bf34ded192f418c1abb5b007a066d6e5ad1bc8f200dee44dc0841f\"}, {\"path\": \"third_party/imgui/misc/cpp/imgui_stdlib.cpp\", \"sha256\": \"f97af53aa2a75e21229df70756ac18837a37dc9ae621a6b0bb53aace18baf035\"}, {\"path\": \"third_party/imgui/misc/cpp/imgui_stdlib.h\", \"sha256\": \"7ab7fd2f9fb9d4feae10584a6100642e16464e47f3f3cb223218074de5a24bf6\"}, {\"path\": \"third_party/imgui/misc/debuggers/README.txt\", \"sha256\": \"32ec05b80d891ac07649044c4cdaf0e3a9dbd6994f9b7f6ea34ded53e8d7f275\"}, {\"path\": \"third_party/imgui/misc/debuggers/imgui.gdb\", \"sha256\": \"6ed919f8564eb404b730441a95ef6f6a612a91005e09d6adf16ff9c291930cbb\"}, {\"path\": \"third_party/imgui/misc/debuggers/imgui.natstepfilter\", \"sha256\": \"5405d61cac535ebe28b8599ead5dad2039fc9e5cce0a3e46cee9140bea0fb267\"}, {\"path\": \"third_party/imgui/misc/debuggers/imgui.natvis\", \"sha256\": \"a96ef1646559efb59f2b6819c4df6d7b91e33fbeb924c4b4d611c3ccd6e4ead8\"}, {\"path\": \"third_party/imgui/misc/debuggers/imgui_lldb.py\", \"sha256\": \"ed787ba3e1072e052e0cf95e798ce6d1a138408325af0e9c86982788920458c1\"}, {\"path\": \"third_party/imgui/misc/fonts/Cousine-Regular.ttf\", \"sha256\": \"0d5d5eeb6a342432bd63a3c0d16e8470160e019933ee5af3e159d06d665dacce\"}, {\"path\": \"third_party/imgui/misc/fonts/DroidSans.ttf\", \"sha256\": \"4e2371bc0e4cf6983342e150412f140da79d674c9be0b56458401f581072ecd3\"}, {\"path\": \"third_party/imgui/misc/fonts/Karla-Regular.ttf\", \"sha256\": \"907c55a993e35b3ae4f3b8b8c28367f4b6d431df8e9ca6fbd382d8317dd3684e\"}, {\"path\": \"third_party/imgui/misc/fonts/ProggyClean.ttf\", \"sha256\": \"527d2a443ce051f93f7e77b855609722b8cb220a9f104b4aa037be5c90b71324\"}, {\"path\": \"third_party/imgui/misc/fonts/ProggyTiny.ttf\", \"sha256\": \"79bf8d3896ba83ae2f9c4fa214dce8fc689eae47950474947a4cc5c6e14a9bfc\"}, {\"path\": \"third_party/imgui/misc/fonts/ProggyVector-ExtractScript.txt\", \"sha256\": \"5f2af359fe0469c479998795cba1566431a57930dfc828afe44593b426835e24\"}, {\"path\": \"third_party/imgui/misc/fonts/Roboto-Medium.ttf\", \"sha256\": \"8559132c89ad51d8a2ba5b171887a44a7ba93776e205f553573de228e64b45f8\"}, {\"path\": \"third_party/imgui/misc/fonts/binary_to_compressed_c.cpp\", \"sha256\": \"8f39e8890cd03c9374be72973f6d95b335d31c8b6862f7b249e9d45ff0daf691\"}, {\"path\": \"third_party/imgui/misc/freetype/README.md\", \"sha256\": \"8f3e00126ec338e4ea2872a4b608f55706fbf35e2dc000652ef08e3cce13be14\"}, {\"path\": \"third_party/imgui/misc/freetype/imgui_freetype.cpp\", \"sha256\": \"d52bc55fc0493c633f25ea3949d2eed8aa95b43755de559a258e9f93e55a3796\"}, {\"path\": \"third_party/imgui/misc/freetype/imgui_freetype.h\", \"sha256\": \"f290a0d40662b70987f510652d391aca12e436235eb51152e55aeb9f7d3f45d9\"}, {\"path\": \"third_party/imgui/misc/single_file/imgui_single_file.h\", \"sha256\": \"a42f63e51656ee69a9dcc47aec31c0ddb518b593e3455dfe3e9a1b8cf4c71197\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "unknown upstream origin"
+        }
+      ],
+      "type": "library"
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "unknown",
+      "assemblies": [
+        "git:https://github.com/wave-owl/mercury@c91aa4b04c2bb24210af8ffa5c351abfb2f47961"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [],
+      "ref": "56ba88607572bf61"
+    },
+    {
+      "dependsOn": [],
+      "ref": "5c4588b6b724fe1d"
+    },
+    {
+      "dependsOn": [],
+      "ref": "7ee0402ffd9c1689"
+    },
+    {
+      "dependsOn": [],
+      "ref": "a677b089d442ad1a"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:14bcff2231daae55eda9f246b7ed90bbd391cd3397f6b21f92772155f80bce67"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:1aae099a58b09dc61588ff54429a5b447272215e7193d546ecf4d012bfe42978"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:1d4344e6f433bebe80c0c1ecf3c5ca771a1407dfc74db4c7df04a99a19585e13"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:27a20fc4e35241b66b1c835ab429e568a94b020e91c4f74aba9fe5be4248619c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:433678c5726f0f129883fd8935c4554432da2729fb9e637e0279174c58572e5c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:43d6d106bd062ed2b2bf431b3f48d0ec2ae1486dcb59bbbb3341e3bc2d7178d6"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:5753a9b854abf587d07e008eee089ac3b129844641c6d0a279ad1b032e55fc2b"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:68ab4e00225349cb5f4d58dbe36f02c9e1f77821b5021317de438c60516cdfa7"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:9a46085f996f0c73c8f15e06b7dc893f45f920aca2b845a4a61b91606c93e635"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:a3619666083dbd503d66cd2a33908850fe25c039ab21293191d056a18defb881"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:a8560b202257caf2e5ccd751da4842299a2ca960eaf1330bf7e6d05f5a41ea98"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:a8e7206a3713077b0695f34193d3366493e1571239c532631c7b261b7f6d23fe"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:a9e61681a968b20f53f6fdc1d503a2f1ef65b68eb4b047fdfbb58ed85cdc1ce7"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:ab5dcb0434d573d24d8d4c6db168cc962f6ac8b65c9d63b7c78ee02639f75db8"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:c23e12c944fbb3411fda51bdddb495175dc93c59ced9a27645de8c3151dda7a1"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:d057b251284217187c6ab087996b14763a7487173df4bb0bc49f3202c26c99ad"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:d6628b652a0608f6a638bcc4e069553e33a2b96a1a6e6ceb7f3e03befaa267e9"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:e2dbe4ef9942e96f407bd52be64755236e36ce2b2206e3dd1570c368a2bf2334"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:f96bd527aeb7100e165db3d8c763726ed8da94995a34f594b8a20681fc82ef5a"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:0"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:1"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:10"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:11"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:12"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:13"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:14"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:15"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:16"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:17"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:18"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:19"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:2"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:20"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:21"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:22"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:23"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:24"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:25"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:26"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:27"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:28"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:29"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:3"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:30"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:31"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:32"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:33"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:34"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:35"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:36"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:37"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:38"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:39"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:4"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:40"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:5"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:6"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:7"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:8"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:9"
+    },
+    {
+      "dependsOn": [
+        "56ba88607572bf61",
+        "5c4588b6b724fe1d",
+        "7ee0402ffd9c1689",
+        "a677b089d442ad1a",
+        "cmake:14bcff2231daae55eda9f246b7ed90bbd391cd3397f6b21f92772155f80bce67",
+        "cmake:1aae099a58b09dc61588ff54429a5b447272215e7193d546ecf4d012bfe42978",
+        "cmake:1d4344e6f433bebe80c0c1ecf3c5ca771a1407dfc74db4c7df04a99a19585e13",
+        "cmake:27a20fc4e35241b66b1c835ab429e568a94b020e91c4f74aba9fe5be4248619c",
+        "cmake:433678c5726f0f129883fd8935c4554432da2729fb9e637e0279174c58572e5c",
+        "cmake:43d6d106bd062ed2b2bf431b3f48d0ec2ae1486dcb59bbbb3341e3bc2d7178d6",
+        "cmake:5753a9b854abf587d07e008eee089ac3b129844641c6d0a279ad1b032e55fc2b",
+        "cmake:68ab4e00225349cb5f4d58dbe36f02c9e1f77821b5021317de438c60516cdfa7",
+        "cmake:9a46085f996f0c73c8f15e06b7dc893f45f920aca2b845a4a61b91606c93e635",
+        "cmake:a3619666083dbd503d66cd2a33908850fe25c039ab21293191d056a18defb881",
+        "cmake:a8560b202257caf2e5ccd751da4842299a2ca960eaf1330bf7e6d05f5a41ea98",
+        "cmake:a8e7206a3713077b0695f34193d3366493e1571239c532631c7b261b7f6d23fe",
+        "cmake:a9e61681a968b20f53f6fdc1d503a2f1ef65b68eb4b047fdfbb58ed85cdc1ce7",
+        "cmake:ab5dcb0434d573d24d8d4c6db168cc962f6ac8b65c9d63b7c78ee02639f75db8",
+        "cmake:c23e12c944fbb3411fda51bdddb495175dc93c59ced9a27645de8c3151dda7a1",
+        "cmake:d057b251284217187c6ab087996b14763a7487173df4bb0bc49f3202c26c99ad",
+        "cmake:d6628b652a0608f6a638bcc4e069553e33a2b96a1a6e6ceb7f3e03befaa267e9",
+        "cmake:e2dbe4ef9942e96f407bd52be64755236e36ce2b2206e3dd1570c368a2bf2334",
+        "cmake:f96bd527aeb7100e165db3d8c763726ed8da94995a34f594b8a20681fc82ef5a",
+        "external-library:0",
+        "external-library:1",
+        "external-library:10",
+        "external-library:11",
+        "external-library:12",
+        "external-library:13",
+        "external-library:14",
+        "external-library:15",
+        "external-library:16",
+        "external-library:17",
+        "external-library:18",
+        "external-library:19",
+        "external-library:2",
+        "external-library:20",
+        "external-library:21",
+        "external-library:22",
+        "external-library:23",
+        "external-library:24",
+        "external-library:25",
+        "external-library:26",
+        "external-library:27",
+        "external-library:28",
+        "external-library:29",
+        "external-library:3",
+        "external-library:30",
+        "external-library:31",
+        "external-library:32",
+        "external-library:33",
+        "external-library:34",
+        "external-library:35",
+        "external-library:36",
+        "external-library:37",
+        "external-library:38",
+        "external-library:39",
+        "external-library:4",
+        "external-library:40",
+        "external-library:5",
+        "external-library:6",
+        "external-library:7",
+        "external-library:8",
+        "external-library:9",
+        "pkg:github/actions/checkout@v6?package-id=0bd618b3907a3e01",
+        "pkg:github/actions/checkout@v6?package-id=2b916eec267023fa",
+        "vendored:source/audioio/ffaudio",
+        "vendored:source/audioio/ffbase",
+        "vendored:tests/gr-hermes_ofdm/lib",
+        "vendored:third_party"
+      ],
+      "ref": "git:https://github.com/wave-owl/mercury@c91aa4b04c2bb24210af8ffa5c351abfb2f47961"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/checkout@v6?package-id=0bd618b3907a3e01"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/checkout@v6?package-id=2b916eec267023fa"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:source/audioio/ffaudio"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:source/audioio/ffbase"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:tests/gr-hermes_ofdm/lib"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:third_party"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "git:https://github.com/wave-owl/mercury@c91aa4b04c2bb24210af8ffa5c351abfb2f47961",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/mercury/tree/c91aa4b04c2bb24210af8ffa5c351abfb2f47961"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/mercury",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "source-root"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "c91aa4b04c2bb24210af8ffa5c351abfb2f47961"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "c9291ec713209ff64cdcbdcd4e272172cadc9cf6"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/mercury"
+        },
+        {
+          "name": "sbom:release-tags",
+          "value": "[]"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:snapshot",
+          "value": "true"
+        },
+        {
+          "name": "sbom:snapshot-source-commit",
+          "value": "c91aa4b04c2bb24210af8ffa5c351abfb2f47961"
+        },
+        {
+          "name": "sbom:snapshot-scope",
+          "value": "Initial immutable source snapshot, before the tooling commit; not a release report."
+        }
+      ],
+      "type": "application",
+      "version": "c91aa4b04c2bb24210af8ffa5c351abfb2f47961"
+    },
+    "properties": [
+      {
+        "name": "sbom:scope",
+        "value": "Source repository inventory only; completeness is UNKNOWN. Syft inventories tracked source/package manifests. Gitlinks and declared vendored/model evidence are inspected at immutable pins. CMake declarations are conditional requirements, not resolved installations. This is NOT proof of operating-system packages, static-link closure, build-time resolution, or the contents of release binaries."
+      },
+      {
+        "name": "sbom:generation-status",
+        "value": "success"
+      },
+      {
+        "name": "sbom:generation-errors",
+        "value": "[]"
+      }
+    ],
+    "timestamp": "2026-11-02T16:50:40.814182+00:00",
+    "tools": {
+      "components": [
+        {
+          "author": "anchore",
+          "name": "syft",
+          "type": "application",
+          "version": "1.55.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:120b11ac-b811-4e2d-b984-663442cc92c9",
+  "specVersion": "1.6",
+  "version": 1
+}

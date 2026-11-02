@@ -264,3 +264,9 @@ https://lists.riseup.net/www/info/hermes-general
 The code was originally written by Fadi Jerji for Rhizomatica's HERMES project. Currently the project is maintained by Rhizomatica's HERMES team.
 
 This project is sponsored by ARDC.
+
+## Source SBOM
+
+See [repository source SBOM report](SBOM.md). Release reports are generated automatically.
+
+The [source SBOM policy](SBOM-POLICY.md) describes automatic release artifacts.
