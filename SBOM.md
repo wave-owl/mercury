@@ -94,9 +94,9 @@ None.
 | GLFW | 3.4.0 | Syft source/package discovery | unresolved |
 | actions/checkout | v6 | Syft source/package discovery | unresolved |
 | actions/checkout | v6 | Syft source/package discovery | unresolved |
-| /Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/glfw/lib/glfw3.dll | unresolved | Syft source/package discovery | unresolved |
-| /Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/imgui/.github/workflows/build.yml | unresolved | Syft source/package discovery | unresolved |
-| /Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/imgui/.github/workflows/static-analysis.yml | unresolved | Syft source/package discovery | unresolved |
+| third_party/glfw/lib/glfw3.dll | unresolved | Syft source/package discovery | unresolved |
+| third_party/imgui/.github/workflows/build.yml | unresolved | Syft source/package discovery | unresolved |
+| third_party/imgui/.github/workflows/static-analysis.yml | unresolved | Syft source/package discovery | unresolved |
 
 License evidence paths/hashes, source manifests, model hashes and conditional
 CMake declarations are recorded in SBOM.cdx.json. Declared upstream pins do not

@@ -13,7 +13,7 @@
           "content": "66ba8fa846a870e8e69b9af283eb80c3d3549d08a38f3f2193d449aad7e92e1d"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/glfw/lib/glfw3.dll",
+      "name": "third_party/glfw/lib/glfw3.dll",
       "type": "file"
     },
     {
@@ -28,7 +28,7 @@
           "content": "4cc9bdcca87c877d9d474f60c506a1e353689f1465f2bfd53c30fedab994d776"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/imgui/.github/workflows/build.yml",
+      "name": "third_party/imgui/.github/workflows/build.yml",
       "type": "file"
     },
     {
@@ -43,7 +43,7 @@
           "content": "8a944b822707f4aee86e2e735f3b45f6693329ebf2bed33eeb1d35872d89f660"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-upstream-results/mercury/.source-input/third_party/imgui/.github/workflows/static-analysis.yml",
+      "name": "third_party/imgui/.github/workflows/static-analysis.yml",
       "type": "file"
     },
     {
